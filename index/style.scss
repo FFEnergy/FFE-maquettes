@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+$h1font-color: #FFFFFF;
+$pfont-color: #FFFFFF;
+$h2font-color: #39729bff;
+
+body{
+  overflow-x: hidden;
+  height: 5000px;
+  background: rgb(15,5,107);
+  background: linear-gradient(rgba(15,5,107,1) 1%, rgba(95,187,226,1) 25%, rgba(124,220,240,1) 77%, rgba(231,247,249,1) 98%);
+}
+
+section.index h1{
+  margin: 100px 0 0 0;
+  display: flex;
+  justify-content: center;
+  color: $h1font-color;
+  font-size: 52px;
+  font-family: 'Sansita', sans-serif;
+}
+
+//images de nuages
+
+section.index section.nuages img{
+  position: absolute;
+  width: 400px;
+}
+
+section.index section.nuages img:nth-child(1){
+  left: 30%;
+  top: 70px;
+  transition: 1.6s;
+}
+
+section.index section.nuages img:nth-child(2){
+  left: 70%;
+  transition: 1.4s;
+}
+
+section.index section.nuages img:nth-child(3){
+  top: 250px;
+  transition: 0.5s;
+}
+
+//image de l'eolienne
+
+section.index section.Eolienne{
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+section.index section.Eolienne img:nth-child(2){
+  width: 800px;
+  z-index: 2;
+}
+
+section.index section.Eolienne img:nth-child(1){
+  top: 200px;
+  z-index: 1;
+  width: 900px;
+  position: absolute;
+}
+
+// section de la presentation de l'Eolienne
+
+section.Windy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.Windy .titre-eolienne{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section.Windy h1{
+  margin: -50px 0 0 0;
+  color: $h2font-color;
+  font-size: 55px;
+  font-family: 'Sansita', sans-serif;
+  z-index: 2;
+}
+
+section.Windy .circle-transparent-white{
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  background-color: $pfont-color;
+  opacity: 0.5;
+  right: 5%;
+  margin-top: -90px;
+  position: absolute;
+}
+
+section.Windy .circle-transparent-blue{
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: $h2font-color;
+  opacity: 1;
+  right: 13%;
+  margin-top: -105px;
+  position: absolute;
+}
+
+section.Windy .circle-light:nth-of-type(1){
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  margin-top: -70px;
+  margin-left: -60px;
+  z-index: 1;
+  background-color: #66C4E5;
+}
+
+section.Windy .circle-light-around-circle:nth-of-type(2){
+  width: 114px;
+  height: 114px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  margin-top: -80px;
+  margin-left: -60px;
+  z-index: 1;
+  border: 8px solid #66C4E5;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+section.Windy .circle-light:nth-of-type(3){
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  margin-top: -55px;
+  margin-left: 100px;
+  z-index: 1;
+  background-color: #66C4E5;
+}
+
+section.Windy .circle-light-around-circle:nth-of-type(4){
+  width: 94px;
+  height: 94px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  margin-top: -65px;
+  margin-left: 100px;
+  z-index: 1;
+  border: 8px solid #66C4E5;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+section.Windy .text-eolienne{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section.Windy .text-eolienne p{
+  margin-top: 80px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: $pfont-color;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+section.Windy .boutons-eolienne{
+  display: flex;
+  justify-content: center;
+}
+
+section.Windy .boutons-eolienne .bouton-hover{
+  background-color : #60BDE2;
+  border : 2px solid #FFFFFF;
+  border-radius : 20px;
+  color : #FFFFFF;
+  font-size : 15px;
+  width : 300px;
+  height : 60px;
+}
+
+section.Windy .boutons-eolienne .bouton-primaire{
+  background-color : #FFFFFF;
+  border : 2px;
+  border-radius : 20px;
+  color : #60BDE2;
+  font-size : 15px;
+  width : 300px;
+  height : 60px;
+}
