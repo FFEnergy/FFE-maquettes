@@ -1,6 +1,3 @@
-
-var images = $( ".nuage" );
-console.log($(".nuage"));
 var d1 = $(".nuage:nth-child(2)").css("left").split('p')[0];
 
 $(window).scroll(function(){
