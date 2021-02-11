@@ -1,0 +1,25 @@
+body {
+    background: rgb(15,5,107);
+    background: linear-gradient(rgba(15,5,107,1) 1%, rgba(95,187,226,1) 41%, rgba(124,220,240,1) 77%, rgba(231,247,249,1) 98%) no-repeat;
+    height: 4000px;
+}
+section.index section.nuages img{
+    position: absolute;
+    width: 400px;
+  }
+  
+  section.index section.nuages img:nth-child(1){
+    left: 30%;
+    top: 70px;
+    transition: 1.6s;
+  }
+  
+  section.index section.nuages img:nth-child(2){
+    left: 70%;
+    transition: 1.4s;
+  }
+  
+  section.index section.nuages img:nth-child(3){
+    top: 250px;
+    transition: 0.5s;
+  }

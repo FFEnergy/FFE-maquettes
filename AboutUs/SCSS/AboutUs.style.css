@@ -1,0 +1,31 @@
+body {
+  background: #0f056b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #0f056b), color-stop(41%, #5fbbe2), color-stop(77%, #7cdcf0), color-stop(98%, #e7f7f9)) no-repeat;
+  background: linear-gradient(#0f056b 1%, #5fbbe2 41%, #7cdcf0 77%, #e7f7f9 98%) no-repeat;
+  height: 4000px;
+}
+
+section.index section.nuages img {
+  position: absolute;
+  width: 400px;
+}
+
+section.index section.nuages img:nth-child(1) {
+  left: 30%;
+  top: 70px;
+  -webkit-transition: 1.6s;
+  transition: 1.6s;
+}
+
+section.index section.nuages img:nth-child(2) {
+  left: 70%;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+}
+
+section.index section.nuages img:nth-child(3) {
+  top: 250px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=AboutUs.style.css.map */
