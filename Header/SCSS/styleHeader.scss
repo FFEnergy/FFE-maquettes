@@ -1,0 +1,109 @@
+body {
+    background: rgb(15,5,107);
+    background: linear-gradient(rgba(15,5,107,1) 1%, rgba(95,187,226,1) 41%, rgba(124,220,240,1) 77%, rgba(231,247,249,1) 98%) no-repeat;
+    height: 4000px;
+}
+header {
+    vertical-align: middle;
+}
+.form-inline {
+    order: 3;
+}
+#PhotoProfil {
+    margin-right: 75px;
+    padding-top: 20px;
+    img {
+        width: 70px !important;
+        height: 70px !important;
+        border-radius: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    i {
+        font-size: 30px;
+        display: block;
+        padding-left: 38%;
+    }
+}
+
+#logo {
+    margin-left: 75px;
+    margin-top: -30px;
+}
+.navbar-nav{
+    margin-left: 50px;
+    li {
+        margin-left: 50px;
+        a {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+    }
+}
+.fa-bars ,.fa-caret-down {
+    color: white;
+}
+
+@media screen and (min-width: 420px) and (max-width: 992px) {
+    .navbar-nav{
+        li {
+            p {
+                color: white;
+                display: none;
+            }
+        }
+    }
+    .navbar-brand {
+        flex: 5;
+    }
+    #PhotoProfil {
+        flex: 5;
+    }
+    .form-inline {
+        order: 0;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 440px) {
+    .navbar-brand {
+        display: block;
+        width: 100%;
+        text-align: center;
+        #logo {
+            margin: 0 0 0 0;
+        }
+    }
+    .form-inline {
+        display: block;
+        width: 100%;
+        text-align: center;
+        #PhotoProfil {
+            margin: 0 0 0 0;
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            i {
+                padding: 0 0 0 0;
+            }
+        }
+    }
+    .navbar-toggler {
+        display: block;
+        width: 100%;
+
+    }
+    .navbar-nav{
+        margin: 0;
+        li {
+            margin-left: 0;
+            a {
+                color: white;
+            }
+            p {
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+body {
+  background: #0f056b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #0f056b), color-stop(41%, #5fbbe2), color-stop(77%, #7cdcf0), color-stop(98%, #e7f7f9)) no-repeat;
+  background: linear-gradient(#0f056b 1%, #5fbbe2 41%, #7cdcf0 77%, #e7f7f9 98%) no-repeat;
+  height: 4000px;
+}
+
+header {
+  vertical-align: middle;
+}
+
+.form-inline {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+#PhotoProfil {
+  margin-right: 75px;
+  padding-top: 20px;
+}
+
+#PhotoProfil img {
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+#PhotoProfil i {
+  font-size: 30px;
+  display: block;
+  padding-left: 38%;
+}
+
+#logo {
+  margin-left: 75px;
+  margin-top: -30px;
+}
+
+.navbar-nav {
+  margin-left: 50px;
+}
+
+.navbar-nav li {
+  margin-left: 50px;
+}
+
+.navbar-nav li a {
+  color: white;
+}
+
+.navbar-nav li p {
+  color: white;
+}
+
+.fa-bars, .fa-caret-down {
+  color: white;
+}
+
+@media screen and (min-width: 420px) and (max-width: 992px) {
+  .navbar-nav li p {
+    color: white;
+    display: none;
+  }
+  .navbar-brand {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+  #PhotoProfil {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+  .form-inline {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 440px) {
+  .navbar-brand {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-brand #logo {
+    margin: 0 0 0 0;
+  }
+  .form-inline {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .form-inline #PhotoProfil {
+    margin: 0 0 0 0;
+  }
+  .form-inline #PhotoProfil img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-inline #PhotoProfil i {
+    padding: 0 0 0 0;
+  }
+  .navbar-toggler {
+    display: block;
+    width: 100%;
+  }
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-nav li {
+    margin-left: 0;
+  }
+  .navbar-nav li a {
+    color: white;
+  }
+  .navbar-nav li p {
+    color: white;
+  }
+}
+/*# sourceMappingURL=styleHeader.css.map */
