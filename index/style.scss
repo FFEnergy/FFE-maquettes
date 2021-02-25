@@ -73,6 +73,37 @@ p{
     border: 8px solid #FFFFFF;
     background-color: rgba(0, 0, 0, 0);
   }
+p{
+  z-index: 1;
+  margin-top: 80px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.text{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bouton-primaire{
+  cursor: pointer;
+  margin: 55px 15px 15px 15px;
+  transition: 0.7s;
+  background-color : #FFFFFF;
+  border : 2px;
+  border-radius : 20px;
+  color : #60BDE2;
+  font-size : 15px;
+  width : 300px;
+  height : 50px;
+  &:hover {
+    background-color : #60BDE2;
+    border : 1px solid #FFFFFF;
+    color : #FFFFFF;
+  }
+  z-index: 1;
+}
 
 section.index{
 
@@ -116,7 +147,7 @@ section.index{
   }
 
   // NOTE: section de la presentation de l'Eolienne
-  section.Windy {
+  section.Windy{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,40 +207,9 @@ section.index{
       margin-top: -65px;
       margin-left: 100px;
     }
-    .text-eolienne{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      p{
-        z-index: 1;
-        margin-top: 80px;
-        width: 700px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-      }
-    }
     .boutons-eolienne{
       display: flex;
       justify-content: center;
-      .bouton-primaire{
-        cursor: pointer;
-        margin: 55px 15px 15px 15px;
-        transition: 0.7s;
-        background-color : #FFFFFF;
-        border : 2px;
-        border-radius : 20px;
-        color : #60BDE2;
-        font-size : 15px;
-        width : 300px;
-        height : 50px;
-        &:hover {
-          background-color : #60BDE2;
-          border : 2px solid #FFFFFF;
-          color : #FFFFFF;
-        }
-        z-index: 1;
-      }
       img{
         position: absolute;
         z-index: 0;
@@ -232,11 +232,14 @@ section.index{
         width: 250px;
       }
     }
-
   }
+
   // NOTE: section du pourquoi l'eolienne
   section.Pourquoi{
     margin-top: 250px;
+    .text{
+      margin-top: 120px;
+    }
     .titres-Pourquoi{
       display: flex;
       justify-content: space-around;
@@ -283,7 +286,58 @@ section.index{
         font-size: 30px !important;
       }
     }
+    .circle-transparent-blue{
+      width: 160px;
+      height: 160px;
+      border-radius: 100%;
+      background-color: $h2font-color;
+      opacity: 1;
+      left: 1%;
+      margin-top: 65px;
+      position: absolute;
+    }
+    .circle-transparent-white{
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      background-color: $pfont-color;
+      opacity: 0.5;
+      left: 7%;
+      margin-top: 30px;
+      position: absolute;
+    }
   }
 
 
+  // NOTE: section des moyens mis en place
+  section.Moyen{
+    margin-top: 250px;
+    .titres-moyen{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-left: 20%;
+    }
+    .titre-moyen{
+      .circle-white{
+        width: 90px;
+        height: 90px;
+        margin-top: -108px;
+        margin-left: -23px;
+      }
+      .circle-white-around-circle{
+        width: 94px;
+        height: 94px;
+        margin-top: -118px;
+        margin-left: -33px;
+      }
+      h2{
+        z-index: 2;
+        position: relative;
+      }
+    }
+    .text{
+      margin-top: 120px;
+    }
+  }
 }
