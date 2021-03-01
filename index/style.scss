@@ -13,9 +13,9 @@ h1{
 }
 body{
   overflow-x: hidden;
-  height: 5000px;
   background: rgb(15,5,107);
   background: linear-gradient(rgba(15,5,107,1) 1%, rgba(95,187,226,1) 25%, rgba(124,220,240,1) 77%, rgba(231,247,249,1) 98%);
+  margin: 0;
 }
 h1{
   color: $h1font-color;
@@ -31,6 +31,46 @@ p{
   color: $pfont-color;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
+}
+#linesvg {
+  overflow: visible;
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  margin: 50vh 40px 100vh 40px;
+  stroke-dasharray: 20;
+  position: absolute;
+}
+p{
+  z-index: 1;
+  margin-top: 80px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.text{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bouton-primaire{
+  cursor: pointer;
+  margin: 55px 15px 15px 15px;
+  transition: 0.7s;
+  background-color : #FFFFFF;
+  border : 2px;
+  border-radius : 20px;
+  color : #60BDE2;
+  font-size : 15px;
+  width : 300px;
+  height : 50px;
+  &:hover {
+    background-color : #60BDE2;
+    border : 1px solid #FFFFFF;
+    color : #FFFFFF;
+  }
+  z-index: 1;
 }
 
 // NOTE: circles
@@ -73,37 +113,6 @@ p{
     border: 8px solid #FFFFFF;
     background-color: rgba(0, 0, 0, 0);
   }
-p{
-  z-index: 1;
-  margin-top: 80px;
-  width: 700px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.text{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.bouton-primaire{
-  cursor: pointer;
-  margin: 55px 15px 15px 15px;
-  transition: 0.7s;
-  background-color : #FFFFFF;
-  border : 2px;
-  border-radius : 20px;
-  color : #60BDE2;
-  font-size : 15px;
-  width : 300px;
-  height : 50px;
-  &:hover {
-    background-color : #60BDE2;
-    border : 1px solid #FFFFFF;
-    color : #FFFFFF;
-  }
-  z-index: 1;
-}
 
 section.index{
 
@@ -133,7 +142,6 @@ section.index{
     display: flex;
     justify-content: center;
     margin-top: 300px;
-
     img:nth-child(2){
       width: 800px;
       z-index: 2;
@@ -308,7 +316,6 @@ section.index{
     }
   }
 
-
   // NOTE: section des moyens mis en place
   section.Moyen{
     margin-top: 250px;
@@ -339,5 +346,94 @@ section.index{
     .text{
       margin-top: 120px;
     }
+    .circle-sky{
+      width: 160px;
+      height: 160px;
+      border-radius: 100%;
+      opacity: 1;
+      left: 75%;
+      margin-top: -145px;
+      position: absolute;
+    }
+    .circle-transparent-white{
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      background-color: $pfont-color;
+      opacity: 0.5;
+      left: 80%;
+      margin-top: -20px;
+      position: absolute;
+      z-index: 2;
+    }
+  }
+
+  // NOTE: section du dessin
+  section.Dessin{
+    display: flex;
+    height: 600px;
+    margin-top: 650px;
+    .plaine-petit{
+      display: flex;
+      position: absolute;
+      width: 800px;
+      min-width: 50%;
+      height: 700px;
+      border-radius: 50% 50% 0% 0%;
+      background-color: #00B94A;
+      left: -10%;
+      z-index: 0;
+      img:nth-child(1){
+        width: 400px;
+        position: absolute;
+        padding-left: 50px;
+        margin-top: -200px;
+        z-index: 1;
+      }
+      img:nth-child(2){
+        position: absolute;
+        padding-left: 350px;
+        margin-top: 20px;
+        z-index: 1;
+      }
+    }
+    .plaine-grand{
+      position: absolute;
+      width: 1100px;
+      min-width: 80%;
+      height: 700px;
+      border-radius: 50% 50% 0% 0%;
+      background-color: #00D957;
+      right: -10%;
+      img{
+        width: 100px;
+      }
+      img:nth-child(1){
+        width: 1700px;
+        margin-top: -750px;
+        position: absolute;
+        padding-left: 50px;
+        z-index: 1;
+      }
+      img:nth-child(2){
+        position: absolute;
+        padding-left: 300px;
+        z-index: 1;
+      }
+      img:nth-child(3){
+        position: absolute;
+        margin-top: 40px;
+        padding-left: 380px;
+        z-index: 2;
+      }
+      img:nth-child(4){
+        position: absolute;
+        margin-top: 20px;
+        padding-left: 450px;
+        z-index: 1;
+
+      }
+    }
+
   }
 }
