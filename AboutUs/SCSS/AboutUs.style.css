@@ -5,27 +5,510 @@ body {
   height: 4000px;
 }
 
-section.index section.nuages img {
+section.nuages img {
   position: absolute;
   width: 400px;
 }
 
-section.index section.nuages img:nth-child(1) {
+section.nuages img:nth-child(1) {
   left: 30%;
   top: 70px;
   -webkit-transition: 1.6s;
   transition: 1.6s;
 }
 
-section.index section.nuages img:nth-child(2) {
+section.nuages img:nth-child(2) {
   left: 70%;
   -webkit-transition: 1.4s;
   transition: 1.4s;
 }
 
-section.index section.nuages img:nth-child(3) {
+section.nuages img:nth-child(3) {
   top: 250px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: 52px;
+}
+
+#titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-size: 45px;
+}
+
+section.miseEnPlace h2 {
+  z-index: 2;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+section.miseEnPlace div .circle-sky {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  margin-top: -105px;
+  margin-left: -55px;
+  z-index: 1;
+  background-color: #60AAFF;
+}
+
+section.miseEnPlace div .circle-sky-around-circle {
+  width: 114px;
+  height: 114px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  margin-top: -120px;
+  margin-left: -70px;
+  z-index: 1;
+  border: 8px solid #60AAFF;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+section.miseEnPlace {
+  margin-top: 500px;
+}
+
+.miseEnPlace #FirstP {
+  margin-top: 200px;
+}
+
+.miseEnPlace p {
+  width: 40%;
+  text-align: center;
+  margin-left: 30%;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.miseEnPlace #titreH2 {
+  margin-left: 20%;
+}
+
+.miseEnPlace #white-circle {
+  z-index: 2;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 10%;
+  margin-top: 150px;
+}
+
+.miseEnPlace #white-circle .circle-white {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  margin-top: -105px;
+  margin-left: -55px;
+  z-index: 1;
+  background-color: white;
+}
+
+.miseEnPlace #white-circle .circle-white-around-cirle {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  margin-top: -114px;
+  margin-left: -64px;
+  z-index: 1;
+  border: 4px solid white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.SectionYtb #bulle {
+  margin-top: 200px;
+}
+
+.SectionYtb #bulle .circle-transparent-white {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  opacity: 0.5;
+  right: 14%;
+  margin-top: -140px;
+  position: absolute;
+  z-index: 4;
+}
+
+.SectionYtb #bulle .circle-transparent-blue {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: #4A90B5;
+  opacity: 1;
+  right: 13%;
+  margin-top: -105px;
+  position: absolute;
+  z-index: 3;
+}
+
+.SectionYtb .videoytb {
+  width: 60%;
+  height: 500px;
+  margin-left: 20%;
+  margin-right: 20%;
+  z-index: 2;
+  position: relative;
+}
+
+.SectionYtb #ytb {
+  margin-top: 0px;
+  margin-left: 17%;
+}
+
+.SectionYtb #ytb .circle-ytb {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -105px;
+  margin-left: -55px;
+  z-index: 3;
+  background-color: #4A90B5;
+}
+
+.SectionYtb #ytb .circle-ytb-around-cirle {
+  width: 221px;
+  height: 221px;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -125px;
+  margin-left: -75px;
+  z-index: 1;
+  border: 10px solid #4A90B5;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.SectionNotreEquipe #oiseaux {
+  width: 50px;
+  height: 50px;
+}
+
+.SectionNotreEquipe #oiseaux img {
+  position: absolute;
+  width: 200px;
+}
+
+.SectionNotreEquipe #oiseaux #oiseau1 {
+  right: 5%;
+}
+
+.SectionNotreEquipe #oiseaux #oiseau2 {
+  right: 10%;
+  margin-top: 220px;
+}
+
+.SectionNotreEquipe #oiseaux #oiseau3 {
+  right: 20%;
+  margin-top: 70px;
+}
+
+.SectionNotreEquipe #titreNotreEquipe {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 250px;
+}
+
+.SectionNotreEquipe #titreNotreEquipe h2 {
+  z-index: 2;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  color: #39729B;
+  font-weight: bold;
+}
+
+.SectionNotreEquipe #titreNotreEquipe .circle-ekip {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -90px;
+  margin-left: 30px;
+  z-index: 1;
+  background-color: white;
+}
+
+.SectionNotreEquipe #titreNotreEquipe .circle-ekip-arround-circle {
+  width: 115px;
+  height: 115px;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  margin-top: -104.5px;
+  margin-left: 14.5px;
+  z-index: 1;
+  border: 7px solid white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.SectionNotreEquipe #titreNotreEquipe #circle-blue-ekip {
+  margin-left: 50%;
+}
+
+.SectionNotreEquipe #titreNotreEquipe #circle-blue-ekip .circle-ekip-blue {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 60px;
+  z-index: 1;
+  background-color: #60AAFF;
+}
+
+.SectionNotreEquipe #titreNotreEquipe #circle-blue-ekip .circle-ekip-arround-circle-blue {
+  width: 165px;
+  height: 165px;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -167px;
+  margin-left: 42px;
+  z-index: 1;
+  border: 10px solid #60AAFF;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.SectionNotreEquipe #team {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.SectionNotreEquipe #team #Florent {
+  width: 50%;
+  text-align: center;
+}
+
+.SectionNotreEquipe #team #Florent .blue-surcircle {
+  width: 420px;
+  height: 420px;
+  background-color: transparent;
+  border: 15px solid #39729B;
+  border-radius: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SectionNotreEquipe #team #Florent img {
+  width: 400px;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+
+.SectionNotreEquipe #team #Florent p {
+  color: #39729B;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.SectionNotreEquipe #team #Florian {
+  width: 50%;
+  text-align: center;
+}
+
+.SectionNotreEquipe #team #Florian .blue-surcircle {
+  width: 420px;
+  height: 420px;
+  background-color: transparent;
+  border: 16px solid #39729B;
+  border-radius: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SectionNotreEquipe #team #Florian img {
+  width: 400px;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+
+.SectionNotreEquipe #team #Florian p {
+  color: #39729B;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 724px) and (max-width: 921px) {
+  body {
+    overflow-x: hidden;
+  }
+  .SectionYtb .videoytb {
+    width: 100%;
+    height: 500px;
+    margin-left: 0%;
+    margin-right: 0%;
+    z-index: 2;
+    position: relative;
+  }
+  .SectionYtb #ytb {
+    margin-top: 0px;
+    margin-left: -50px;
+  }
+  .SectionYtb #bulle {
+    margin-left: 900px;
+    position: relative;
+  }
+  .SectionYtb #bulle .circle-transparent-white {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    margin-right: 100px;
+    margin-top: -140px;
+    position: absolute;
+    z-index: 4;
+  }
+  .SectionYtb #bulle .circle-transparent-blue {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #4A90B5;
+    opacity: 1;
+    right: 13%;
+    margin-top: -105px;
+    position: absolute;
+    z-index: 3;
+  }
+  .SectionNotreEquipe #oiseaux img {
+    width: 125px;
+  }
+  .SectionNotreEquipe #oiseaux #oiseau1 {
+    right: 5%;
+    margin-top: 50px;
+  }
+  .SectionNotreEquipe #oiseaux #oiseau2 {
+    right: 8%;
+    margin-top: 200px;
+  }
+  .SectionNotreEquipe #oiseaux #oiseau3 {
+    right: 20%;
+    margin-top: 100px;
+  }
+  .SectionNotreEquipe #team #Florent .blue-surcircle {
+    width: 320px;
+    height: 320px;
+  }
+  .SectionNotreEquipe #team #Florent img {
+    width: 300px;
+  }
+  .SectionNotreEquipe #team #Florian .blue-surcircle {
+    width: 320px;
+    height: 320px;
+  }
+  .SectionNotreEquipe #team #Florian img {
+    width: 300px;
+  }
+  .SectionNotreEquipe .circle-ekip {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 30px;
+    z-index: 1;
+    background-color: white;
+  }
+  .SectionNotreEquipe .circle-ekip-arround-circle {
+    width: 115px;
+    height: 115px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    margin-top: -104.5px;
+    margin-left: 14.5px;
+    z-index: 1;
+    border: 7px solid white;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .SectionNotreEquipe #circle-blue-ekip {
+    margin-left: 50%;
+  }
+  .SectionNotreEquipe #circle-blue-ekip .circle-ekip-blue {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 60px;
+    z-index: 1;
+    background-color: #60AAFF;
+  }
+  .SectionNotreEquipe #circle-blue-ekip .circle-ekip-arround-circle-blue {
+    width: 165px;
+    height: 165px;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: -167px;
+    margin-left: 42px;
+    z-index: 1;
+    border: 10px solid #60AAFF;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 724px) {
+  .SectionYtb .videoytb {
+    width: 100%;
+    height: 500px;
+    margin-left: 0%;
+    margin-right: 0%;
+    z-index: 2;
+    position: relative;
+  }
+  .SectionYtb #ytb {
+    margin-top: 0px;
+    margin-left: -50px;
+  }
+  .SectionNotreEquipe #team {
+    display: block;
+  }
+  .SectionNotreEquipe #team #Florent {
+    width: 100%;
+  }
+  .SectionNotreEquipe #team #Florent .blue-surcircle {
+    width: 320px;
+    height: 320px;
+  }
+  .SectionNotreEquipe #team #Florent img {
+    width: 300px;
+  }
+  .SectionNotreEquipe #team #Florian {
+    width: 100%;
+  }
+  .SectionNotreEquipe #team #Florian .blue-surcircle {
+    width: 320px;
+    height: 320px;
+  }
+  .SectionNotreEquipe #team #Florian img {
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=AboutUs.style.css.map */
