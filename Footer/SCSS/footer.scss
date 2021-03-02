@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+footer {
+    background-color: #4A90B5;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .barreBlancheFooter {
+        height: 200px;
+        margin-top: 25px;
+        width: 3px;
+        border-radius: 3px;
+        background-color: white;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        #logoEdenSchoolFooter {
+            width: 250px;
+            height: 125px;
+            margin-top: 65px;
+        }
+        #logoFFEnergyFooter {
+            width: 200px;
+            height: 200px;
+            margin-top: 25px;
+        }
+        ul {
+            width: 200px;
+            li {
+                list-style-type: none;
+                padding-top: 25px;
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 960px) { 
+    
+    footer {
+        display: block;
+        width: 100%;
+        .barreBlancheFooter {
+            height: 200px;
+            transform: rotate(90deg);
+            margin-top: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
