@@ -426,32 +426,32 @@ section.miseEnPlace {
   .SectionNotreEquipe #team #Florian img {
     width: 300px;
   }
-  .SectionNotreEquipe .circle-ekip {
-    width: 100px;
-    height: 100px;
+  .SectionNotreEquipe #titreNotreEquipe .circle-ekip {
+    width: 75px;
+    height: 75px;
     border-radius: 100%;
     position: absolute;
     margin-top: -90px;
-    margin-left: 30px;
+    margin-left: 0px;
     z-index: 1;
     background-color: white;
   }
-  .SectionNotreEquipe .circle-ekip-arround-circle {
-    width: 115px;
-    height: 115px;
+  .SectionNotreEquipe #titreNotreEquipe .circle-ekip-arround-circle {
+    width: 90px;
+    height: 90px;
     border-radius: 100%;
     background-color: white;
     position: absolute;
-    margin-top: -104.5px;
-    margin-left: 14.5px;
+    margin-top: -104px;
+    margin-left: -15px;
     z-index: 1;
     border: 7px solid white;
     background-color: rgba(0, 0, 0, 0);
   }
-  .SectionNotreEquipe #circle-blue-ekip {
+  .SectionNotreEquipe #titreNotreEquipe #circle-blue-ekip {
     margin-left: 50%;
   }
-  .SectionNotreEquipe #circle-blue-ekip .circle-ekip-blue {
+  .SectionNotreEquipe #titreNotreEquipe #circle-blue-ekip .circle-ekip-blue {
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -461,9 +461,9 @@ section.miseEnPlace {
     z-index: 1;
     background-color: #60AAFF;
   }
-  .SectionNotreEquipe #circle-blue-ekip .circle-ekip-arround-circle-blue {
-    width: 165px;
-    height: 165px;
+  .SectionNotreEquipe #titreNotreEquipe #circle-blue-ekip .circle-ekip-arround-circle-blue {
+    width: 115px;
+    height: 115px;
     border-radius: 100%;
     position: absolute;
     margin-top: -167px;
@@ -480,12 +480,34 @@ section.miseEnPlace {
     height: 500px;
     margin-left: 0%;
     margin-right: 0%;
-    z-index: 2;
-    position: relative;
   }
   .SectionYtb #ytb {
     margin-top: 0px;
     margin-left: -50px;
+  }
+  .SectionYtb #bulle {
+    margin-left: 120%;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .SectionYtb #bulle .circle-transparent-white {
+    margin-right: 100px;
+    margin-top: -140px;
+  }
+  .SectionNotreEquipe #oiseaux img {
+    width: 125px;
+  }
+  .SectionNotreEquipe #oiseaux #oiseau1 {
+    right: 5%;
+    margin-top: 50px;
+  }
+  .SectionNotreEquipe #oiseaux #oiseau2 {
+    right: 8%;
+    margin-top: 150px;
+  }
+  .SectionNotreEquipe #oiseaux #oiseau3 {
+    right: 20%;
+    margin-top: 100px;
   }
   .SectionNotreEquipe #team {
     display: block;
@@ -509,6 +531,33 @@ section.miseEnPlace {
   }
   .SectionNotreEquipe #team #Florian img {
     width: 300px;
+  }
+  .SectionNotreEquipe #titreNotreEquipe .circle-ekip {
+    width: 100px;
+    height: 100px;
+    margin-top: -90px;
+    margin-left: -50px;
+  }
+  .SectionNotreEquipe #titreNotreEquipe .circle-ekip-arround-circle {
+    width: 115px;
+    height: 115px;
+    margin-top: -104px;
+    margin-left: -65px;
+  }
+  .SectionNotreEquipe #titreNotreEquipe #circle-blue-ekip {
+    margin-left: 50%;
+  }
+  .SectionNotreEquipe #titreNotreEquipe #circle-blue-ekip .circle-ekip-blue {
+    width: 100px;
+    height: 100px;
+    margin-top: -150px;
+    margin-left: 60px;
+  }
+  .SectionNotreEquipe #titreNotreEquipe #circle-blue-ekip .circle-ekip-arround-circle-blue {
+    width: 115px;
+    height: 115px;
+    margin-top: -167px;
+    margin-left: 42px;
   }
 }
 /*# sourceMappingURL=AboutUs.style.css.map */
