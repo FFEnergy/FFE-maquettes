@@ -1,0 +1,551 @@
+$h1font-color: #FFFFFF;
+$pfont-color: #FFFFFF;
+$h2font-color: #39729bff;
+
+body {
+    background: rgb(15,5,107);
+    background: linear-gradient(rgba(15,5,107,1) 1%, rgba(95,187,226,1) 41%, rgba(124,220,240,1) 77%, rgba(231,247,249,1) 98%) no-repeat;
+    height: 4000px;
+}
+
+section.nuages img{
+    position: absolute;
+    width: 400px;
+}
+  
+section.nuages img:nth-child(1){
+    left: 30%;
+    top: 70px;
+    transition: 1.6s;
+}
+  
+section.nuages img:nth-child(2){
+    left: 70%;
+    transition: 1.4s;
+}
+  
+section.nuages img:nth-child(3){
+    top: 250px;
+    transition: 0.5s;
+}
+h1 {
+   color: $h1font-color;
+   font-size: 52px;
+}
+#titre {
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    color: $h1font-color;
+    font-size: 45px;
+ }
+
+section.miseEnPlace h2 {
+    z-index: 2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+section.miseEnPlace div .circle-sky {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+    margin-top: -105px;
+    margin-left: -55px;
+    z-index: 1;
+    background-color: #60AAFF;
+}
+
+section.miseEnPlace div .circle-sky-around-circle{
+    width: 114px;
+    height: 114px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: -70px;
+    z-index: 1;
+    border: 8px solid #60AAFF;
+    background-color: rgba(0, 0, 0, 0,);
+}
+
+section.miseEnPlace {
+    margin-top: 500px;
+}
+.miseEnPlace {
+    #FirstP {
+        margin-top: 200px;
+    }
+    p {
+        width: 40%;
+        text-align: center;
+        margin-left: 30%;
+        color: $pfont-color;
+        font-size: 20px;
+    }
+    #titreH2 {
+        margin-left: 20%;
+    }
+    #white-circle {
+        z-index: 2;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        position: absolute;
+        right: 10%;
+        margin-top: 150px;
+        .circle-white {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            background-color: black;
+            position: absolute;
+            margin-top: -105px;
+            margin-left: -55px;
+            z-index: 1;
+            background-color: white;
+        }
+        .circle-white-around-cirle {
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            background-color: black;
+            position: absolute;
+            margin-top: -114px;
+            margin-left: -64px;
+            z-index: 1;
+            border: 4px solid white;
+            background-color: rgba(0, 0, 0, 0,);
+        }
+    }    
+}
+
+
+.SectionYtb {
+    #bulle {
+        margin-top: 200px;
+        .circle-transparent-white{
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            background-color: $pfont-color;
+            opacity: 0.5;
+            right: 14%;
+            margin-top: -140px;
+            position: absolute;
+            z-index: 4;
+        }
+        .circle-transparent-blue{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: #4A90B5;
+            opacity: 1;
+            right: 13%;
+            margin-top: -105px;
+            position: absolute;
+            z-index: 3;
+        }
+    }
+    .videoytb {
+        width: 60%;
+        height: 500px;
+        margin-left: 20%;
+        margin-right: 20%;
+        z-index: 2;
+        position: relative;
+    }
+    #ytb {
+        margin-top: 0px;
+        margin-left: 17%;
+        .circle-ytb {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            position: absolute;
+            margin-top: -105px;
+            margin-left: -55px;
+            z-index: 3;
+            background-color: #4A90B5;
+        }
+        .circle-ytb-around-cirle {
+            width: 221px;
+            height: 221px;
+            border-radius: 100%;
+            position: absolute;
+            margin-top: -125px;
+            margin-left: -75px;
+            z-index: 1;
+            border: 10px solid #4A90B5;
+            background-color: rgba(0, 0, 0, 0,);
+        }
+    }
+}
+
+.SectionNotreEquipe {
+    #oiseaux {
+        width: 50px;
+        height: 50px;
+        img {
+            position: absolute;
+            width: 200px;
+        }
+        #oiseau1 {
+            right: 5%;
+        }
+        #oiseau2 {
+            right: 10%;
+            margin-top: 220px;
+        }
+        #oiseau3 {
+            right: 20%;
+            margin-top: 70px;
+        }
+    }
+    #titreNotreEquipe {
+        width: 30%;
+        margin-left: 35%;
+        margin-top: 250px;
+        h2 {
+            z-index: 2;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            color: #39729B;
+            font-weight: bold;
+        }
+        .circle-ekip {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            margin-top: -90px;
+            margin-left: 30px;
+            z-index: 1;
+            background-color: white;
+        }
+        .circle-ekip-arround-circle {
+            width: 115px;
+            height: 115px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            margin-top: -104.5px;
+            margin-left: 14.5px;
+            z-index: 1;
+            border: 7px solid white;
+            background-color: rgba(0, 0, 0, 0,);
+        }
+        #circle-blue-ekip {
+            margin-left: 50%;
+            .circle-ekip-blue {
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+                position: absolute;
+                margin-top: -150px;
+                margin-left: 60px;
+                z-index: 1;
+                background-color: #60AAFF;
+            }
+            .circle-ekip-arround-circle-blue {
+                width: 165px;
+                height: 165px;
+                border-radius: 100%;
+                position: absolute;
+                margin-top: -167px;
+                margin-left: 42px;
+                z-index: 1;
+                border: 10px solid #60AAFF;
+                background-color: rgba(0, 0, 0, 0,);
+            }
+        }
+
+    }
+    #team {
+        display: inline-flex;
+        width: 100%;
+        margin-top: 150px;
+        text-align: center;
+        #Florent {
+            width: 50%;
+            text-align: center;
+            .blue-surcircle {
+                width: 420px;
+                height: 420px;
+                background-color: transparent;
+                border: 15px solid #39729B;
+                border-radius: 100%;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            img {
+                width: 400px;
+                border-radius: 100%;
+                margin-top: 10px;
+            }
+            p {
+                color: #39729B;
+                font-size: 52px;
+                font-weight: bold;
+            }
+        }
+        #Florian {
+            width: 50%;
+            text-align: center;
+            .blue-surcircle {
+                width: 420px;
+                height: 420px;
+                background-color: transparent;
+                border: 16px solid #39729B;
+                border-radius: 100%;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            img {
+                width: 400px;
+                border-radius: 100%;
+                margin-top: 10px;
+            }
+            p {
+                color: #39729B;
+                font-size: 52px;
+                font-weight: bold;
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: 724px) and (max-width: 921px) {
+    body {
+        overflow-x: hidden;
+    }
+    .SectionYtb {
+        .videoytb {
+            width: 100%;
+            height: 500px;
+            margin-left: 0%;
+            margin-right: 0%;
+            z-index: 2;
+            position: relative;
+        }
+        #ytb {
+            margin-top: 0px;
+            margin-left: -50px;
+        }
+        #bulle { 
+            margin-left: 900px;
+            position: relative;
+            .circle-transparent-white{
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                background-color: $pfont-color;
+                opacity: 0.5;
+                margin-right: 100px;
+                margin-top: -140px;
+                position: absolute;
+                z-index: 4;
+            }
+            .circle-transparent-blue{
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                background-color: #4A90B5;
+                opacity: 1;
+                right: 13%;
+                margin-top: -105px;
+                position: absolute;
+                z-index: 3;
+            }
+        }
+    }
+    .SectionNotreEquipe {
+        #oiseaux {
+            img {
+                width: 125px;
+            }
+            #oiseau1 {
+                right: 5%;
+                margin-top: 50px;
+            }
+            #oiseau2 {
+                right: 8%;
+                margin-top: 200px;
+            }
+            #oiseau3 {
+                right: 20%;
+                margin-top: 100px;
+            }
+        }
+        #team {
+            #Florent {
+                .blue-surcircle {
+                    width: 320px;
+                    height: 320px;
+                }
+                img {
+                    width: 300px;
+                }
+            }
+            #Florian {
+                .blue-surcircle {
+                    width: 320px;
+                    height: 320px;
+                }
+                img {
+                    width: 300px;
+                }
+            }
+        }
+        #titreNotreEquipe {
+            .circle-ekip {
+                width: 75px;
+                height: 75px;
+                border-radius: 100%;
+                position: absolute;
+                margin-top: -90px;
+                margin-left: 0px;
+                z-index: 1;
+                background-color: white;
+            }
+            .circle-ekip-arround-circle {
+                width: 90px;
+                height: 90px;
+                border-radius: 100%;
+                background-color: white;
+                position: absolute;
+                margin-top: -104px;
+                margin-left: -15px;
+                z-index: 1;
+                border: 7px solid white;
+                background-color: rgba(0, 0, 0, 0,);
+            }
+            #circle-blue-ekip {
+                margin-left: 50%;
+                .circle-ekip-blue {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100%;
+                    position: absolute;
+                    margin-top: -150px;
+                    margin-left: 60px;
+                    z-index: 1;
+                    background-color: #60AAFF;
+                }
+                .circle-ekip-arround-circle-blue {
+                    width: 115px;
+                    height: 115px;
+                    border-radius: 100%;
+                    position: absolute;
+                    margin-top: -167px;
+                    margin-left: 42px;
+                    z-index: 1;
+                    border: 10px solid #60AAFF;
+                    background-color: rgba(0, 0, 0, 0,);
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 724px) { 
+
+    .SectionYtb {
+        .videoytb {
+            width: 100%;
+            height: 500px;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        #ytb {
+            margin-top: 0px;
+            margin-left: -50px;
+        }
+        #bulle { 
+            margin-left: 120%;
+            position: sticky;
+            .circle-transparent-white{
+                margin-right: 100px;
+                margin-top: -140px;
+            }
+        }
+    }
+    
+    .SectionNotreEquipe {
+        #oiseaux {
+            img {
+                width: 125px;
+            }
+            #oiseau1 {
+                right: 5%;
+                margin-top: 50px;
+            }
+            #oiseau2 {
+                right: 8%;
+                margin-top: 150px;
+            }
+            #oiseau3 {
+                right: 20%;
+                margin-top: 100px;
+            }
+        }
+        #team {
+            display: block;
+            #Florent {
+                width: 100%;
+                .blue-surcircle {
+                    width: 320px;
+                    height: 320px;
+                }
+                img {
+                    width: 300px;
+                }
+            }
+            #Florian {
+                width: 100%;
+                .blue-surcircle {
+                    width: 320px;
+                    height: 320px;
+                }
+                img {
+                    width: 300px;
+                }
+            }
+        }
+            #titreNotreEquipe {
+            .circle-ekip {
+                width: 100px;
+                height: 100px;
+                margin-top: -90px;
+                margin-left: -50px;
+            }
+            .circle-ekip-arround-circle {
+                width: 115px;
+                height: 115px;
+                margin-top: -104px;
+                margin-left: -65px;
+            }
+            #circle-blue-ekip {
+                margin-left: 50%;
+                .circle-ekip-blue {
+                    width: 100px;
+                    height: 100px;
+                    margin-top: -150px;
+                    margin-left: 60px;
+                }
+                .circle-ekip-arround-circle-blue {
+                    width: 115px;
+                    height: 115px;
+                    margin-top: -167px;
+                    margin-left: 42px;
+                }
+            }
+        }
+    }
+}
