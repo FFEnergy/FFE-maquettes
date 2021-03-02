@@ -1,0 +1,79 @@
+$h1font-color: #FFFFFF;
+$pfont-color: #FFFFFF;
+$h2font-color: #39729bff;
+
+body {
+    background: rgb(15,5,107);
+    background: linear-gradient( rgba(95,187,226,1) 1%, rgba(124,220,240,1) 50%, rgba(231,247,249,1) 98%) no-repeat;
+    height: 4000px;
+}
+.sectionCoter {
+    .PPNuage {
+        #nuage {
+            width: 650px;
+            margin-left: -150px;
+            position: absolute;
+            z-index: 1;
+        }
+        #PP {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            object-fit: cover;
+            position: relative;
+            margin-left: 120px;
+            margin-top: 120px;
+            z-index: 2;
+        }
+    }
+    ul {
+        margin-top: 150px;
+        margin-left: 100px;
+        color: white;
+        list-style-type: none;
+        li {
+            margin-top: 100px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #selectedLi {
+            color: #39729B;
+        }
+    }
+#lescercles {
+    margin-top: -310px;
+    .circle {
+        width: 100px;
+        height: 100px;
+        margin-left: 150px;
+        margin-top: 30px;
+        
+        .circle-white {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 100%;
+            margin-left: -100px;
+            margin-top: -10px;
+        }
+        .circle-white-around-cirle {
+            width: 60px;
+            height: 60px;
+            background-color: transparent;
+            border: 5px solid white;
+            position: absolute;
+            border-radius: 100%;
+            margin-left: -110px;
+            margin-top: -10px;
+        }
+        .selectedcircle {
+            background-color: #39729B;
+        }
+        .selectedArroundCircle {
+            border-color: #39729B;
+        }
+    } 
+}
+     
+   
+}
