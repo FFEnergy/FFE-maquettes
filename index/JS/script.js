@@ -29,7 +29,7 @@ var scene = new ScrollMagic.Scene({
 var scene2 = new ScrollMagic.Scene({
           triggerElement: "#trigerBird"
         })
-        .setTween(".oiseau", 0.5, {marginLeft: -200}) // trigger a TweenMax.to tween
+        .setTween(".oiseau", 0.5, {marginLeft: -200})
         .addTo(controller);
 
 
@@ -37,20 +37,19 @@ var scene3 = new ScrollMagic.Scene({
           triggerElement: "#triggerBullPourquoi",
           duration: 400
         })
-        .setTween(".bullPourquoi", 0.5, {scale: 5}) // trigger a TweenMax.to tween
+        .setTween(".bullPourquoi", 0.5, {scale: 3})
         .addTo(controller);
-
 
 var scene4 = new ScrollMagic.Scene({
             triggerElement: "#triggerBullMoyen",
             duration: 400
           })
-          .setTween(".bullMoyen", 0.5, {scale: 4}) // trigger a TweenMax.to tween
+          .setTween(".bullMoyen", 0.5, {scale: 3}) // trigger a TweenMax.to tween
           .addTo(controller);
 
 var scene5 = new ScrollMagic.Scene({
             triggerElement: "#triggerBullWindy",
             duration: 400
           })
-          .setTween(".bullWindy", 0.5, {scale: 4}) // trigger a TweenMax.to tween
+          .setTween(".bullWindy", 0.5, {scale: 3}) // trigger a TweenMax.to tween
           .addTo(controller);
