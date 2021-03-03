@@ -1,8 +1,20 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: #0f056b;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #5fbbe2), color-stop(50%, #7cdcf0), color-stop(98%, #e7f7f9)) no-repeat;
-  background: linear-gradient(#5fbbe2 1%, #7cdcf0 50%, #e7f7f9 98%) no-repeat;
-  height: 4000px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #5fbbe2), to(#7cdcf0)) no-repeat;
+  background: linear-gradient(#5fbbe2 1%, #7cdcf0 100%) no-repeat;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.sectionCoter {
+  width: 35%;
 }
 
 .sectionCoter .PPNuage #nuage {
@@ -29,6 +41,8 @@ body {
   margin-left: 100px;
   color: white;
   list-style-type: none;
+  border-right: 8px solid white;
+  width: 250px;
 }
 
 .sectionCoter ul li {
@@ -78,5 +92,107 @@ body {
 
 .sectionCoter #lescercles .circle .selectedArroundCircle {
   border-color: #39729B;
+}
+
+.sectionCoter #lesOiseauxCompte {
+  margin-top: 50px;
+}
+
+.sectionCoter #lesOiseauxCompte img {
+  position: absolute;
+  width: 180px;
+}
+
+.sectionCoter #lesOiseauxCompte #oiseau1compte {
+  margin-top: 175px;
+  margin-left: 125px;
+}
+
+.sectionCoter #lesOiseauxCompte #oiseau2compte {
+  margin-left: 20px;
+}
+
+.sectionCoter #lesOiseauxCompte #oiseau3compte {
+  margin-top: 40px;
+  margin-left: 250px;
+}
+
+.sectionAuteCoter {
+  width: 65%;
+}
+
+.sectionAuteCoter #bulle {
+  margin-top: 100px;
+}
+
+.sectionAuteCoter #bulle .circle-transparent-white {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  opacity: 0.5;
+  right: 14%;
+  margin-top: 40px;
+  position: absolute;
+  z-index: 4;
+}
+
+.sectionAuteCoter #bulle .circle-transparent-blue {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: #60AAFF;
+  opacity: 1;
+  right: 13%;
+  margin-top: -105px;
+  position: absolute;
+  z-index: 3;
+}
+
+.sectionAuteCoter #lescommandes {
+  margin-top: 250px;
+  margin-left: 150px;
+  border-right: 8px solid white;
+  padding-right: 50px;
+  width: 600px;
+}
+
+.sectionAuteCoter #lescommandes .commande {
+  border: 2px solid white;
+  width: 600px;
+  margin-top: 50px;
+  border-radius: 25px;
+  vertical-align: middle;
+}
+
+.sectionAuteCoter #lescommandes .commande h2 {
+  text-align: center;
+  color: #39729B;
+}
+
+.sectionAuteCoter #lescommandes .commande .image img {
+  display: inline-block;
+  width: 200px;
+  margin-left: 25px;
+  border-radius: 25px;
+  vertical-align: middle;
+}
+
+.sectionAuteCoter #lescommandes .commande .image ul {
+  display: inline-block;
+  vertical-align: middle;
+  list-style-type: none;
+}
+
+.sectionAuteCoter #lescommandes .commande .image ul li {
+  margin: 20px 0 20px 0;
+  color: white;
+  font-size: 20px;
+}
+
+.sectionAuteCoter #lescommandes .commande p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
 }
 /*# sourceMappingURL=Compte.css.map */
