@@ -1,0 +1,151 @@
+@charset "UTF-8";
+body {
+  background: #0f056b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #5fbbe2), to(#7cdcf0)) no-repeat;
+  background: linear-gradient(#5fbbe2 1%, #7cdcf0 100%) no-repeat;
+  height: 2500px;
+}
+
+#section1 h1 {
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px black;
+}
+
+#section1 #nuage1 {
+  width: 700px;
+  margin-left: 15%;
+  margin-top: -150px;
+  position: absolute;
+}
+
+#section1 #nuage2 {
+  width: 450px;
+  margin-left: 70%;
+  margin-top: 150px;
+  position: absolute;
+}
+
+#section1 #nuage3 {
+  width: 500px;
+  margin-top: 200px;
+  margin-left: -5%;
+  position: absolute;
+}
+
+#section1 #divParagraphe {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  margin-top: 150px;
+  font-size: 20px;
+}
+
+#section2 {
+  margin-top: 150px;
+}
+
+#section2 #circle {
+  z-index: 2;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 11%;
+}
+
+#section2 #circle .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -105px;
+  margin-left: -55px;
+  z-index: 1;
+  background-color: #60AAFF;
+}
+
+#section2 #circle .circle-around {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -118px;
+  margin-left: -68px;
+  z-index: 1;
+  border: 8px solid #60AAFF;
+  background-color: transparent;
+}
+
+#section2 h2 {
+  text-transform: uppercase;
+  color: white;
+  margin-left: 10%;
+  font-size: 30px;
+  position: relative;
+  z-index: 3;
+}
+
+#section2 #lesImages {
+  margin-top: 50px;
+  margin-left: 50px;
+  display: inline-block;
+}
+
+#section2 #lesImages #petitesImages {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#section2 #lesImages #petitesImages img {
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+#section2 #lesImages #grosseImage {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+#section2 #lesImages #grosseImage img {
+  width: 465px;
+}
+
+#section2 #Achetter {
+  display: inline-block;
+}
+
+#section2 #Achetter #nombreEolienne {
+  /* Firefox */
+  -moz-appearance: textfield;
+  /* Chrome */
+  /* Opéra*/
+  width: 28px;
+  height: 28px;
+  padding: 0 0 0 0;
+  text-align: center;
+}
+
+#section2 #Achetter #nombreEolienne::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#section2 #Achetter #nombreEolienne::-o-inner-spin-button {
+  -o-appearance: none;
+  margin: 0;
+}
+
+#section2 #Achetter .boutton {
+  width: 30px;
+  height: 30px;
+  padding: 0 0 0 0;
+}
+/*# sourceMappingURL=fiche-produit.css.map */

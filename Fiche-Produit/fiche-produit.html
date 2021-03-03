@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./SCSS/fiche-produit.css">
+    <title>Fiche produit</title>
+</head>
+<body>
+    <section id="section1">
+        <h1>Aidez-nous</h1>
+        <img id="nuage1" src="./Image/nuage1.png">
+        <img id="nuage2" src="./Image/nuage2.png">
+        <img id="nuage3" src="./Image/nuage3.png">
+        <div id="divParagraphe">
+            <p>--- Descriptif technique du produit ---</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestias eveniet optio ducimus est mollitia, commodi dolorum eos aliquam? Aut doloremque, ex voluptate illum facere deleniti corrupti doloribus earum harum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam itaque sed quibusdam ratione sunt ipsum, quos laborum iusto impedit dolores nam veniam provident voluptatum culpa quo. Dolor sit nisi sequi!</p>
+        </div>   
+    </section>
+    <section id="section2">
+        <div id="circle">
+            <div class="circle"></div>
+            <div class="circle-around"></div>
+        </div>
+        <h2>Aider nous en achetant notre éolienne</h2>
+        <div id="lesImages">
+            <div id="petitesImages">
+                <img src="./Image/eolienne5.jpg">
+                <img src="./Image/eolienne3.jpg">
+                <img src="./Image/eolienne4.jpg">
+                <img src="./Image/eolienne6.jpg">
+            </div>
+            <div id="grosseImage">
+                <img src="./Image/eolienne.jpg">
+            </div>
+        </div>
+        <div id="Achetter">
+            <h3>Commander maintenant</h3>
+            <p>Prix : ??? €</p>
+            <form>
+                <button type="button" id="subs" class="boutton" onclick="EnleverValeur()">-</button>
+                <input type="number" id="nombreEolienne" value="0">
+                <button type="button" id="add" class="boutton" onclick="AjouterValeur()">+</button>
+                <button type="submit">Commmander</button>
+            </form>
+        </div>
+    </section>
+</body>
+    <script src="./JS/fiche-produit.js"></script>
+</html>
