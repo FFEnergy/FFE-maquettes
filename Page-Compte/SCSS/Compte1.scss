@@ -84,7 +84,7 @@ body {
 }
 .sectionAuteCoter {
     #lesOiseauxCompte {
-        margin-left: 50%;
+        margin-left: 90%;
 
         img {
             position: absolute;
@@ -100,6 +100,76 @@ body {
         #oiseau3compte {
             margin-top: -100px;
             margin-left: 250px;
+        }
+    }
+    #bulle {
+        margin-top: 200px;
+        .circle-transparent-white{
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            background-color: $pfont-color;
+            opacity: 0.5;
+            right: 14%;
+            margin-top: 40px;
+            position: absolute;
+            z-index: 4;
+        }
+        .circle-transparent-blue{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: #60AAFF;
+            opacity: 1;
+            right: 13%;
+            margin-top: -105px;
+            position: absolute;
+            z-index: 3;
+        }
+    }
+    #LesInformations {
+        margin-top: 350px;
+        margin-left: 200px;
+        form {
+            .circleInfo {
+                display: inline-block;
+                margin-left: -60px;
+                margin-right: 25px;
+                vertical-align: middle;
+                .circle-around-info {
+                    width: 48px;
+                    height: 48px;
+                    background-color: transparent;
+                    border-radius: 100%;
+                    border: 4px solid #60AAFF;
+                    position: absolute;
+                    margin-left: -8px;
+                    margin-top: -8px;
+                }
+                .circle-info {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #60AAFF;
+                    border-radius: 100%;
+                }
+            }
+            label {
+                display: inline-block;
+                color : #4F69EC;
+                font-weight: bold;
+            }
+            input {
+                margin-top: 10px;
+                margin-bottom: 25px;
+                background-color: transparent;
+                border: 2px solid white;
+                border-radius: 25px;
+                padding: 5px 25px 5px 25px;
+                display: block;
+            }
+            input::placeholder {
+                color: #4F69EC;
+            }
         }
     }
 }
@@ -140,8 +210,20 @@ body {
         #lescercles {
             margin-left: 20%;
         }
+        
+    }
+    .sectionAuteCoter { 
+        margin-top: 50px;
+        #LesInformations {
+            margin-top: 100px;;
+        }
+        #bulle {
+            margin-top: 150px;
+            padding-bottom: 10px;
+        }
         #lesOiseauxCompte { 
             margin-top: 150px;
+            margin-left: 40%;
             img {
                 width: 150px;
             }
@@ -164,6 +246,11 @@ body {
     .sectionCoter {
         #lescercles {
             margin-left: 5%;
+        }
+    }
+    .sectionAuteCoter {
+        #lesOiseauxCompte { 
+            margin-left: 0%;
         }
     }
 }
