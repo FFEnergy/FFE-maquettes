@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+$h1font-color: #FFFFFF;
+$pfont-color: #FFFFFF;
+$h2font-color: #39729bff;
+
+h1{
+ margin: 100px 0 0 0;
+ display: flex;
+ justify-content: center;
+}
+body{
+  overflow-x: hidden;
+  background: rgb(15,5,107);
+  background: linear-gradient( rgba(95,187,226,1) 1%, rgba(124,220,240,1) 100%) no-repeat;
+  margin: 0;
+  height: 100vh;
+}
+h1{
+  color: $h1font-color;
+  font-size: 52px;
+  font-family: 'Sansita', sans-serif;
+}
+h2{
+  color: $h2font-color;
+  font-size: 45px;
+  font-family: 'Sansita', sans-serif;
+}
+p{
+  color: $pfont-color;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.hidden{
+  position: absolute;
+  left: -5000px;
+}
+
+section.contact{
+  section.nuages{
+    img{
+      position: absolute;
+      width: 400px;
+    }
+    img:nth-child(1){
+      left: 20%;
+      top: 100px;
+      transition: 1.6s;
+    }
+    img:nth-child(2){
+      left: 70%;
+      transition: 1.4s;
+    }
+  }
+  .oiseaux{
+    img{
+      position: absolute;
+      z-index: 0;
+    }
+    img:nth-child(1){
+      left: 47%;
+      top: 385px;
+      transition: 1.6s;
+      width: 80px;
+    }
+    img:nth-child(2){
+      left: 55%;
+      top: 355px;
+      transition: 1.4s;
+      width: 80px;
+    }
+    img:nth-child(3){
+      left: 50%;
+      top: 300px;
+      transition: 0.5s;
+      width: 80px;
+    }
+  }
+
+  section.formulaire{
+    .upper-form{
+      display: flex;
+      .left-form{
+        display: flex;
+        flex-direction: column;
+      }
+      .right-form{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
