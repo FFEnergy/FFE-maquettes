@@ -11,6 +11,11 @@
   <div class="circle-sky"></div>
   <div class="circle-transparent-white"></div>
 
+  <div class="circles">
+    <div class="circle-sky-dark"></div>
+    <div class="circle-sky-dark-around-circle"></div>
+  </div>
+
   <section class="Logincards">
     <div class="cards register">
       <h2>Inscription</h2>
@@ -22,13 +27,13 @@
         <input type="text" name="firstname" value="" placeholder="First Name">
 
         <label class="hidden" for="email">Email</label>
-        <input type="text" name="email" value="" placeholder="Email">
+        <input type="email" name="email" value="" placeholder="Email">
 
         <label class="hidden" for="password">Password</label>
-        <input type="text" name="password" value="" placeholder="Password">
+        <input type="password" name="password" value="" placeholder="Password">
 
         <label class="hidden" for="confirmpassword">Confirm Password</label>
-        <input type="text" name="confirmpassword" value="" placeholder="Confirm Password">
+        <input type="password" name="confirmpassword" value="" placeholder="Confirm Password">
 
         <div class="progress-bar-back">
           <div id="progress-bar-1"></div>
@@ -37,11 +42,26 @@
           <div id="progress-bar-4"></div>
         </div>
 
-        <button type="button" name="Signup">Sign up</button>
+        <button type="submit" name="Signup">Sign up</button>
       </form>
     </div>
     <div class="cards login">
       <h2>Connexion</h2>
+      <form class="" action="login.html" method="post">
+        <label class="hidden" for="email">Email</label>
+        <input type="email" name="email" value="" placeholder="Email">
+
+        <label class="hidden" for="password">Password</label>
+        <input type="password" name="password" value="" placeholder="Password">
+
+        <div class="checkbox">
+          <input type="checkbox" name="stay" value="" placeholder="">
+          <label class="" for="stay">Restez connecté</label>
+        </div>
+
+        <a href="#">Mot de passe oublié ?</a>
+        <button type="submit" name="Signup">Sign up</button>
+      </form>
     </div>
   </section>
 
