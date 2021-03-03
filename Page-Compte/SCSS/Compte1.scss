@@ -1,0 +1,256 @@
+$h1font-color: #FFFFFF;
+$pfont-color: #FFFFFF;
+$h2font-color: #39729bff;
+html {
+    overflow-x: hidden;
+}
+body {
+    background: rgb(15,5,107);
+    background: linear-gradient( rgba(95,187,226,1) 1%, rgba(124,220,240,1) 100%) no-repeat;
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 200px;
+}
+.sectionCoter {
+    width: 35%;
+    .PPNuage {
+        #nuage {
+            width: 650px;
+            margin-left: -150px;
+            position: absolute;
+            z-index: 1;
+        }
+        #PP {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            object-fit: cover;
+            position: relative;
+            margin-left: 120px;
+            margin-top: 120px;
+            z-index: 2;
+        }
+    }
+    ul {
+        margin-top: 150px;
+        margin-left: 100px;
+        color: white;
+        list-style-type: none;
+        border-right: 8px solid white;
+        width: 250px;
+        li {
+            margin-top: 100px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #selectedLi {
+            color: #39729B;
+        }
+    }
+    #lescercles {
+        margin-top: -310px;
+        .circle {
+            width: 100px;
+            height: 100px;
+            margin-left: 150px;
+            margin-top: 30px;
+            
+            .circle-white {
+                width: 50px;
+                height: 50px;
+                background-color: white;
+                border-radius: 100%;
+                margin-left: -100px;
+                margin-top: -10px;
+            }
+            .circle-white-around-cirle {
+                width: 60px;
+                height: 60px;
+                background-color: transparent;
+                border: 5px solid white;
+                position: absolute;
+                border-radius: 100%;
+                margin-left: -110px;
+                margin-top: -10px;
+            }
+            .selectedcircle {
+                background-color: #39729B;
+            }
+            .selectedArroundCircle {
+                border-color: #39729B;
+            }
+        } 
+    } 
+}
+.sectionAuteCoter {
+    #lesOiseauxCompte {
+        margin-left: 90%;
+
+        img {
+            position: absolute;
+            width: 180px;
+        }
+        #oiseau1compte {
+            margin-top: 120px;
+            margin-left: 200px;
+        }
+        #oiseau2compte {
+            margin-left: 40px;
+        }
+        #oiseau3compte {
+            margin-top: -100px;
+            margin-left: 250px;
+        }
+    }
+    #bulle {
+        margin-top: 200px;
+        .circle-transparent-white{
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            background-color: $pfont-color;
+            opacity: 0.5;
+            right: 14%;
+            margin-top: 40px;
+            position: absolute;
+            z-index: 4;
+        }
+        .circle-transparent-blue{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: #60AAFF;
+            opacity: 1;
+            right: 13%;
+            margin-top: -105px;
+            position: absolute;
+            z-index: 3;
+        }
+    }
+    #LesInformations {
+        margin-top: 350px;
+        margin-left: 200px;
+        form {
+            .circleInfo {
+                display: inline-block;
+                margin-left: -60px;
+                margin-right: 25px;
+                vertical-align: middle;
+                .circle-around-info {
+                    width: 48px;
+                    height: 48px;
+                    background-color: transparent;
+                    border-radius: 100%;
+                    border: 4px solid #60AAFF;
+                    position: absolute;
+                    margin-left: -8px;
+                    margin-top: -8px;
+                }
+                .circle-info {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #60AAFF;
+                    border-radius: 100%;
+                }
+            }
+            label {
+                display: inline-block;
+                color : #4F69EC;
+                font-weight: bold;
+            }
+            input {
+                margin-top: 10px;
+                margin-bottom: 25px;
+                background-color: transparent;
+                border: 2px solid white;
+                border-radius: 25px;
+                padding: 5px 25px 5px 25px;
+                display: block;
+            }
+            input::placeholder {
+                color: #4F69EC;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1180px) {
+    body {
+        display: block;
+        margin-bottom: 350px;
+    }
+    .sectionCoter {
+        width: 100%;
+        .PPNuage {
+            #nuage {
+                width: 100%;
+                position: absolute;
+                z-index: 1;
+                margin-left: auto;
+                display: none;
+            }
+            #PP {
+                
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                object-fit: cover;
+                position: relative;
+                margin-left: 50%;
+                margin-right: 50%;
+                margin-top: 120px;
+                z-index: 2;
+            }
+        }
+        ul {
+            width: 50%;
+            margin-left: 25%;
+            text-align: center;
+        }
+        #lescercles {
+            margin-left: 20%;
+        }
+        
+    }
+    .sectionAuteCoter { 
+        margin-top: 50px;
+        #LesInformations {
+            margin-top: 100px;;
+        }
+        #bulle {
+            margin-top: 150px;
+            padding-bottom: 10px;
+        }
+        #lesOiseauxCompte { 
+            margin-top: 150px;
+            margin-left: 40%;
+            img {
+                width: 150px;
+            }
+            #oiseau1compte {
+                margin-top: 50px;
+                margin-left:350px;
+            }
+            #oiseau2compte {
+                margin-top: -50px;
+                margin-left: 150px;
+            }
+            #oiseau3compte {
+                margin-top: -150px;
+                margin-left: 370px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 615px) {
+    .sectionCoter {
+        #lescercles {
+            margin-left: 5%;
+        }
+    }
+    .sectionAuteCoter {
+        #lesOiseauxCompte { 
+            margin-left: 0%;
+        }
+    }
+}
