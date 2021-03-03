@@ -1,0 +1,180 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #0f056b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #5fbbe2), to(#7cdcf0)) no-repeat;
+  background: linear-gradient(#5fbbe2 1%, #7cdcf0 100%) no-repeat;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.sectionCoter {
+  width: 35%;
+}
+
+.sectionCoter .PPNuage #nuage {
+  width: 650px;
+  margin-left: -150px;
+  position: absolute;
+  z-index: 1;
+}
+
+.sectionCoter .PPNuage #PP {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  margin-left: 120px;
+  margin-top: 120px;
+  z-index: 2;
+}
+
+.sectionCoter ul {
+  margin-top: 150px;
+  margin-left: 100px;
+  color: white;
+  list-style-type: none;
+  border-right: 8px solid white;
+  width: 250px;
+}
+
+.sectionCoter ul li {
+  margin-top: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sectionCoter ul #selectedLi {
+  color: #39729B;
+}
+
+.sectionCoter #lescercles {
+  margin-top: -310px;
+}
+
+.sectionCoter #lescercles .circle {
+  width: 100px;
+  height: 100px;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+.sectionCoter #lescercles .circle .circle-white {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 100%;
+  margin-left: -100px;
+  margin-top: -10px;
+}
+
+.sectionCoter #lescercles .circle .circle-white-around-cirle {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 5px solid white;
+  position: absolute;
+  border-radius: 100%;
+  margin-left: -110px;
+  margin-top: -10px;
+}
+
+.sectionCoter #lescercles .circle .selectedcircle {
+  background-color: #39729B;
+}
+
+.sectionCoter #lescercles .circle .selectedArroundCircle {
+  border-color: #39729B;
+}
+
+.sectionAuteCoter #lesOiseauxCompte {
+  margin-left: 50%;
+}
+
+.sectionAuteCoter #lesOiseauxCompte img {
+  position: absolute;
+  width: 180px;
+}
+
+.sectionAuteCoter #lesOiseauxCompte #oiseau1compte {
+  margin-top: 120px;
+  margin-left: 200px;
+}
+
+.sectionAuteCoter #lesOiseauxCompte #oiseau2compte {
+  margin-left: 40px;
+}
+
+.sectionAuteCoter #lesOiseauxCompte #oiseau3compte {
+  margin-top: -100px;
+  margin-left: 250px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1180px) {
+  body {
+    display: block;
+    margin-bottom: 350px;
+  }
+  .sectionCoter {
+    width: 100%;
+  }
+  .sectionCoter .PPNuage #nuage {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    display: none;
+  }
+  .sectionCoter .PPNuage #PP {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 120px;
+    z-index: 2;
+  }
+  .sectionCoter ul {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+  }
+  .sectionCoter #lescercles {
+    margin-left: 20%;
+  }
+  .sectionCoter #lesOiseauxCompte {
+    margin-top: 150px;
+  }
+  .sectionCoter #lesOiseauxCompte img {
+    width: 150px;
+  }
+  .sectionCoter #lesOiseauxCompte #oiseau1compte {
+    margin-top: 50px;
+    margin-left: 350px;
+  }
+  .sectionCoter #lesOiseauxCompte #oiseau2compte {
+    margin-top: -50px;
+    margin-left: 150px;
+  }
+  .sectionCoter #lesOiseauxCompte #oiseau3compte {
+    margin-top: -150px;
+    margin-left: 370px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 615px) {
+  .sectionCoter #lescercles {
+    margin-left: 5%;
+  }
+}
+/*# sourceMappingURL=Compte1.css.map */

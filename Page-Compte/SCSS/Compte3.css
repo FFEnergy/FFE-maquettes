@@ -195,4 +195,76 @@ body {
   color: white;
   font-size: 20px;
 }
-/*# sourceMappingURL=Compte.css.map */
+
+@media screen and (min-width: 0px) and (max-width: 1180px) {
+  body {
+    display: block;
+    margin-bottom: 350px;
+  }
+  .sectionCoter {
+    width: 100%;
+  }
+  .sectionCoter .PPNuage #nuage {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    display: none;
+  }
+  .sectionCoter .PPNuage #PP {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 120px;
+    z-index: 2;
+  }
+  .sectionCoter ul {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+  }
+  .sectionCoter #lescercles {
+    margin-left: 20%;
+  }
+  .sectionCoter #lesOiseauxCompte {
+    margin-top: 150px;
+  }
+  .sectionCoter #lesOiseauxCompte img {
+    width: 150px;
+  }
+  .sectionCoter #lesOiseauxCompte #oiseau1compte {
+    margin-top: 50px;
+    margin-left: 350px;
+  }
+  .sectionCoter #lesOiseauxCompte #oiseau2compte {
+    margin-top: -50px;
+    margin-left: 150px;
+  }
+  .sectionCoter #lesOiseauxCompte #oiseau3compte {
+    margin-top: -150px;
+    margin-left: 370px;
+  }
+  .sectionAuteCoter {
+    width: 100%;
+  }
+  .sectionAuteCoter #lescercles {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .sectionAuteCoter #bulle {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 615px) {
+  .sectionCoter #lescercles {
+    margin-left: 5%;
+  }
+}
+/*# sourceMappingURL=Compte3.css.map */
