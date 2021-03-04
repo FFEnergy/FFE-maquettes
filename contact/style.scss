@@ -37,12 +37,37 @@ p{
   position: absolute;
   left: -5000px;
 }
+.circle-light{
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #60AAFF;
+  }
+.circle-light-around-circle{
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    border: 8px solid #60AAFF;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .circle-white{
+      border-radius: 100%;
+      position: absolute;
+      z-index: 1;
+      background-color: $pfont-color;
+    }
+  .circle-white-around-circle{
+      border-radius: 100%;
+      position: absolute;
+      z-index: 1;
+      border: 8px solid $pfont-color;
+      background-color: rgba(0, 0, 0, 0);
+    }
 
-section.contact{
   section.nuages{
     img{
       position: absolute;
-      width: 400px;
+      width: 500px;
     }
     img:nth-child(1){
       left: 20%;
@@ -79,17 +104,104 @@ section.contact{
     }
   }
 
+
+section.contact{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
   section.formulaire{
-    .upper-form{
+    margin-top: 200px;
+    width: 70%;
+    .circle-light{
+      margin-left: -430px;
+      margin-top: 25px;
+      width: 90px;
+      height: 90px;
+    }
+    .circle-light-around-circle{
+      margin-top: 15px;
+      width: 94px;
+      height: 94px;
+      margin-left: -430px;
+    }
+    form{
       display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h2{
+      z-index: 2;
+      color: $pfont-color;
+      margin-bottom: 90px;
+    }
+    width: 50%;
+    .upper-form{
+      width: 450px;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
       .left-form{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
       }
       .right-form{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
       }
+    }
+    textarea{
+      margin-top: 12px;
+      width: 400px;
+      color: #77C6E7;
+      font-family: 'Roboto', sans-serif;
+      border-radius: 10px;
+      border: none;
+      padding: 20px 30px 7px 20px;
+      color: #77C6E7;
+      font-family: 'Roboto', sans-serif;
+      resize: none;
+    }
+    textarea::placeholder{
+      color: #77C6E7;
+      font-family: 'Roboto', sans-serif;
+    }
+    textarea:focus, input:focus{
+      outline: none;
+    }
+    input{
+      width: 150px;
+      border-radius: 10px;
+      border: none;
+      padding: 7px 30px 7px 20px;
+      color: #77C6E7;
+      font-family: 'Roboto', sans-serif;
+    }
+    input::placeholder{
+      color: #77C6E7;
+      font-family: 'Roboto', sans-serif;
+    }
+    button{
+      margin-top: 20px;
+      width: 150px;
+      border-radius: 20px;
+      border: none;
+      padding: 10px 40px 10px 40px;
+      color: #77C6E7;
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif;
+      background-color: $pfont-color;
+    }
+  }
+
+  section.infoPerso{
+    width: 500px;
+    margin-top: 350px;
+
+    h2{
     }
   }
 }

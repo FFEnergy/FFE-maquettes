@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<section class="contact">
+
   <h1 class="t1">Contactez-nous</h1>
   <section class="nuages">
     <img class="nuage" src="images\nuage1.png" alt="">
@@ -19,31 +19,39 @@
     <img class="oiseau" src="images\oiseau-light.png" alt="">
     <img class="oiseau" src="images\oiseau-light.png" alt="">
   </div>
+<section class="contact">
+
   <section class="formulaire">
+    <h2>Nous rejoindre</h2>
+    <div class="circle-light"></div>
+    <div class="circle-light-around-circle"></div>
+
+
     <form class="contact-form" action="contact.html" method="post">
       <div class="upper-form">
         <div class="left-form">
-
           <label class="hidden" for="firstname">First Name</label>
           <input type="text" name="firstname" value="" placeholder="First Name">
-
           <label class="hidden" for="email">Email</label>
           <input type="email" name="email" value="" placeholder="Email">
-
-
         </div>
         <div class="right-form">
-
           <label class="hidden" for="lastname">Last Name</label>
           <input type="text" name="lastname" value="" placeholder="Last Name">
-
           <label class="hidden" for="Telephone">Télephone</label>
           <input type="text" name="Telephone" value="" placeholder="Télephone">
-
         </div>
       </div>
-
+      <label class="hidden" for="message">First Name</label>
+      <textarea name="message" rows="4" cols="80" placeholder="message"></textarea>
+      <button type="submit" name="Envoyer">Envoyer</button>
     </form>
+  </section>
+  <section class="infoPerso">
+    <h2>Nous contacter</h2>
+    <div class="circle-white"></div>
+    <div class="circle-white-around-circle"></div>
+
   </section>
 </section>
 
@@ -56,6 +64,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js"></script>
-  <script src="JS/script.js" charset="utf-8"></script>
 </body>
 </html>
