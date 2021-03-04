@@ -3,7 +3,7 @@ body {
   background: #0f056b;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #5fbbe2), to(#7cdcf0)) no-repeat;
   background: linear-gradient(#5fbbe2 1%, #7cdcf0 100%) no-repeat;
-  height: 2500px;
+  height: auto;
 }
 
 #section1 h1 {
@@ -70,8 +70,8 @@ body {
 }
 
 #section2 #circle .circle-around {
-  width: 110px;
-  height: 110px;
+  width: 125px;
+  height: 125px;
   border-radius: 100%;
   position: absolute;
   margin-top: -118px;
@@ -91,7 +91,7 @@ body {
 }
 
 #section2 #lesImages {
-  margin-top: 50px;
+  margin-top: 150px;
   margin-left: 50px;
   display: inline-block;
 }
@@ -106,6 +106,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   display: block;
+  border-radius: 10px;
 }
 
 #section2 #lesImages #grosseImage {
@@ -116,10 +117,26 @@ body {
 
 #section2 #lesImages #grosseImage img {
   width: 465px;
+  border-radius: 10px;
 }
 
 #section2 #Achetter {
   display: inline-block;
+  margin-top: 150px;
+  margin-left: 100px;
+  vertical-align: top;
+}
+
+#section2 #Achetter h3 {
+  color: white;
+}
+
+#section2 #Achetter p {
+  color: white;
+}
+
+#section2 #Achetter #textCommande {
+  width: 200px;
 }
 
 #section2 #Achetter #nombreEolienne {
@@ -127,9 +144,10 @@ body {
   -moz-appearance: textfield;
   /* Chrome */
   /* Opéra*/
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   padding: 0 0 0 0;
+  border: 0px;
   text-align: center;
 }
 
@@ -147,5 +165,156 @@ body {
   width: 30px;
   height: 30px;
   padding: 0 0 0 0;
+  border: 0px;
+  background-color: white;
+  font-weight: bold;
+}
+
+#section2 #Achetter #soumettre {
+  display: block;
+  margin-top: 50px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 25px;
+  border: 0px;
+  color: #60AAFF;
+  border: 2px solid white;
+  font-weight: bold;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#section2 #Achetter #soumettre:hover {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#section2 #deco {
+  display: inline-block;
+  position: absolute;
+}
+
+#section2 #deco #oiseaux {
+  width: 50px;
+  height: 50px;
+}
+
+#section2 #deco #oiseaux img {
+  position: absolute;
+  width: 150px;
+}
+
+#section2 #deco #oiseaux #oiseau1 {
+  margin-left: 320px;
+}
+
+#section2 #deco #oiseaux #oiseau2 {
+  margin-left: 250px;
+  margin-top: 170px;
+}
+
+#section2 #deco #oiseaux #oiseau3 {
+  margin-left: 100px;
+  margin-top: 60px;
+}
+
+#section2 #deco2 {
+  display: inline-block;
+  position: absolute;
+  margin-top: 350px;
+}
+
+#section2 #deco2 #circles #circle-white {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  margin-left: 160px;
+  margin-top: 20px;
+  z-index: 3;
+}
+
+#section2 #deco2 #circles #circle-white-arround {
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  border: 10px solid white;
+  position: absolute;
+  z-index: 1;
+  margin-left: 140px;
+}
+
+#section2 #deco2 #circles #circle-blue {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #4A90B5;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 120px;
+  z-index: 2;
+}
+
+#section2 #deco2 #circles #circle-blue-arround {
+  width: 340px;
+  height: 340px;
+  border-radius: 100%;
+  border: 10px solid #4A90B5;
+  z-index: 4;
+  position: absolute;
+  margin-top: 100px;
+}
+
+#section3 {
+  margin-top: 150px;
+}
+
+.divCarroussel {
+  width: 100%;
+  height: 500px;
+}
+
+.textCarroussel h5 {
+  text-align: left;
+}
+
+.textCarroussel .star {
+  text-align: left;
+  color: #FFD500;
+}
+
+.textCarroussel h6 {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.textCarroussel p {
+  text-align: left;
+}
+
+@media screen and (min-width: 0px) and (max-width: 724px) {
+  #section2 #lesImages {
+    margin: 0;
+  }
+  #section2 #lesImages #petitesImages {
+    text-align: center;
+  }
+  #section2 #lesImages #petitesImages img {
+    display: inline-block;
+    width: 24%;
+  }
+  #section2 #lesImages #grosseImage {
+    margin: 0;
+    text-align: center;
+  }
+  #section2 #lesImages #grosseImage img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=fiche-produit.css.map */

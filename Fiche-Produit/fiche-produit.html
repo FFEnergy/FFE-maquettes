@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./SCSS/fiche-produit.css">
     <title>Fiche produit</title>
 </head>
+
 <body>
     <section id="section1">
         <h1>Aidez-nous</h1>
@@ -15,9 +19,12 @@
         <img id="nuage3" src="./Image/nuage3.png">
         <div id="divParagraphe">
             <p>--- Descriptif technique du produit ---</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestias eveniet optio ducimus est mollitia, commodi dolorum eos aliquam? Aut doloremque, ex voluptate illum facere deleniti corrupti doloribus earum harum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam itaque sed quibusdam ratione sunt ipsum, quos laborum iusto impedit dolores nam veniam provident voluptatum culpa quo. Dolor sit nisi sequi!</p>
-        </div>   
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestias eveniet optio ducimus est
+                mollitia, commodi dolorum eos aliquam? Aut doloremque, ex voluptate illum facere deleniti corrupti
+                doloribus earum harum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam itaque sed quibusdam ratione sunt ipsum,
+                quos laborum iusto impedit dolores nam veniam provident voluptatum culpa quo. Dolor sit nisi sequi!</p>
+        </div>
     </section>
     <section id="section2">
         <div id="circle">
@@ -40,13 +47,106 @@
             <h3>Commander maintenant</h3>
             <p>Prix : ??? €</p>
             <form>
-                <button type="button" id="subs" class="boutton" onclick="EnleverValeur()">-</button>
-                <input type="number" id="nombreEolienne" value="0">
-                <button type="button" id="add" class="boutton" onclick="AjouterValeur()">+</button>
-                <button type="submit">Commmander</button>
+                <button type="button" id="subs" class="boutton" onclick="EnleverValeur()"><</button>
+                        <input type="number" id="nombreEolienne" value="0">
+                        <button type="button" id="add" class="boutton" onclick="AjouterValeur()">></button>
+                        <p id="textCommande">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error sequi sed, eos at possimus
+                            minima quam perferendis culpa accusantium impedit sit beatae, praesentium, hic numquam.
+                            Facilis, commodi unde. At, commodi.
+                        </p>
+                        <button type="submit" id="soumettre">Commmander</button>
             </form>
         </div>
+        <div id="deco">
+            <div id="oiseaux">
+                <img id="oiseau1" src="./Image/oiseaux.png">
+                <img id="oiseau2" src="./Image/oiseaux.png">
+                <img id="oiseau3" src="./Image/oiseaux.png">
+            </div>
+        </div>
+        <div id="deco2">
+            <div id="circles">
+                <div id="circle-white"></div>
+                <div id="circle-white-arround"></div>
+                <div id="circle-blue"></div>
+                <div id="circle-blue-arround"></div>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block w-100 divCarroussel" alt="..."></div>
+                    <div class="textCarroussel carousel-caption d-none d-md-block">
+                        <h5>@user1</h5>
+                        <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        <h6>Titre du commentaire</h6>
+                        <p>Some representative placeholder content for the first slide. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Reiciendis corrupti incidunt quas perspiciatis. Alias dolorem,
+                            voluptas culpa, adipisci velit exercitationem laboriosam nemo quidem asperiores, cum
+                            accusamus tempore quas ullam dolore.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="d-block w-100 divCarroussel" alt="..."></div>
+                    <div class="textCarroussel carousel-caption d-none d-md-block">
+                        <h5>@user2</h5>
+                        <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        <h6>Titre du commentaire</h6>
+                        <p>Some representative placeholder content for the second slide. Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Accusamus corrupti quo voluptatem ea quas! Iste harum ipsam
+                            sit esse autem voluptas dolor alias. Perferendis tempore minus atque obcaecati esse aut?</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="d-block w-100 divCarroussel" alt="..."></div>
+                    <div class="textCarroussel carousel-caption d-none d-md-block">
+                        <h5>@user3</h5>
+                        <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                        <h6>Titre du commentaire</h6>
+                        <p>Some representative placeholder content for the third slide. Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Incidunt enim a rem, error ipsum officiis excepturi recusandae
+                            molestiae obcaecati voluptatem ullam vel eum dolor est magnam laborum optio possimus labore.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
     </section>
 </body>
-    <script src="./JS/fiche-produit.js"></script>
+<script src="./JS/fiche-produit.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5703a1c6f6.js" crossorigin="anonymous"></script>
+
 </html>
