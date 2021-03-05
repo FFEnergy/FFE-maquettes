@@ -115,16 +115,17 @@ section.contact{
     margin-top: 200px;
     width: 70%;
     .circle-light{
-      margin-left: -430px;
-      margin-top: 25px;
+      margin-top: -160px;
+      margin-left: 20px;
       width: 90px;
       height: 90px;
+      z-index: 5;
     }
     .circle-light-around-circle{
-      margin-top: 15px;
+      margin-top: -170px;
+      margin-left: 10px;
       width: 94px;
       height: 94px;
-      margin-left: -430px;
     }
     form{
       display: flex;
@@ -132,13 +133,16 @@ section.contact{
       align-items: center;
     }
     h2{
-      z-index: 2;
+      position: relative;
+      z-index: 99;
       color: $pfont-color;
       margin-bottom: 90px;
+      margin-left: -270px;
+      text-align: center;
     }
     width: 50%;
     .upper-form{
-      width: 450px;
+      width: 550px;
       height: 100px;
       display: flex;
       justify-content: space-between;
@@ -155,7 +159,7 @@ section.contact{
     }
     textarea{
       margin-top: 12px;
-      width: 400px;
+      width: 500px;
       color: #77C6E7;
       font-family: 'Roboto', sans-serif;
       border-radius: 10px;
@@ -173,7 +177,7 @@ section.contact{
       outline: none;
     }
     input{
-      width: 150px;
+      width: 200px;
       border-radius: 10px;
       border: none;
       padding: 7px 30px 7px 20px;
@@ -202,6 +206,7 @@ section.contact{
     margin-top: 350px;
 
     h2{
+      text-align: right;
     }
   }
 }
