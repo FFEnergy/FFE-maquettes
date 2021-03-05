@@ -12,5 +12,5 @@ var controller = new ScrollMagic.Controller();
 var scene2 = new ScrollMagic.Scene({
           triggerElement: "#trigerBird"
         })
-        .setTween(".oiseau", 0.5, {marginLeft: -200})
+        .setTween(".oiseau", 1.5, {left: -250})
         .addTo(controller);

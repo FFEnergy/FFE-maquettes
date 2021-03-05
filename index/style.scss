@@ -30,6 +30,7 @@ h2 {
 }
 
 p {
+  line-height: 1.8;
   color: $pfont-color;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
@@ -246,27 +247,34 @@ section.index {
       display: flex;
       justify-content: center;
 
+      .oiseaux{
+        margin-top: 150px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+      }
+
       img {
         position: absolute;
         z-index: 0;
       }
 
       img:nth-child(1) {
-        left: 70%;
-        top: 1400px;
+        margin-left: 400px;
         transition: 1.6s;
         width: 270px;
       }
 
       img:nth-child(2) {
-        left: 80%;
-        top: 1450px;
+        margin-top: -70px;
+        margin-left: 500px;
         transition: 1.4s;
         width: 320px;
       }
 
       img:nth-child(3) {
-        top: 1300px;
+        margin-top: -100px;
+        margin-left: 350px;
         transition: 0.5s;
         width: 250px;
       }
