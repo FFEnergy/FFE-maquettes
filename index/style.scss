@@ -4,20 +4,21 @@ $h1font-color: #FFFFFF;
 $pfont-color: #FFFFFF;
 $h2font-color: #39729bff;
 
-h1 {
-  margin: 100px 0 0;
-  display: flex;
-  justify-content: center;
-}
-
 body {
-  overflow-x: hidden;
   background: rgb(15,5,107);
   background: linear-gradient(rgba(15,5,107,1) 1%, rgba(95,187,226,1) 25%, rgba(124,220,240,1) 77%, rgba(231,247,249,1) 98%);
   margin: 0;
 }
 
+body,html {
+overflow-x: hidden;
+}
+
+
 h1 {
+  margin: 100px 0 0;
+  display: flex;
+  justify-content: center;
   color: $h1font-color;
   font-size: 52px;
   font-family: 'Sansita', sans-serif;
@@ -552,4 +553,138 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
 
 .animator-hidden {
   display: none;
+}
+
+@media screen and (max-width: 400px) {
+  html,body{
+    overflow-y: visible;
+  }
+  p{
+    padding: 20px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  section.index {
+
+    section.nuages {
+      *{
+        display: none;
+      }
+    }
+
+    section.Windy {
+      .circle-transparent-white {
+        display: none;
+      }
+
+      .circle-transparent-blue {
+        display: none;
+      }
+
+      .boutons-eolienne {
+        .oiseaux{
+          display: none;
+        }
+      }
+    }
+
+    section.Pourquoi {
+      margin-top: 100px;
+
+      .text {
+        margin-top: 20px;
+      }
+
+      .titres-Pourquoi {
+        padding: 10px;
+        justify-content: center;
+      }
+
+      .circle-white {
+        display: none;
+      }
+
+      .circle-white-around-circle {
+        display: none;
+      }
+
+      .circle-sky {
+        display: none;
+      }
+
+      .circle-sky-around-circle {
+        display: none;
+      }
+
+      .circles-white {
+        display: none;
+      }
+
+      .titre-situation {
+        h2{
+          text-align: center;
+        }
+        margin-top: 0px;
+      }
+
+      .circle-transparent-white {
+        display: none;
+      }
+
+      .circle-transparent-blue {
+        display: none;
+      }
+    }
+
+    section.Moyen {
+      margin-top: 60px;
+
+      .titres-moyen {
+        margin-left: 0px;
+        justify-content: center;
+      }
+
+      .titre-moyen {
+        .circle-white {
+          display: none;
+        }
+
+        .circle-white-around-circle {
+          display: none;
+        }
+
+        h2 {
+          z-index: 2;
+          position: relative;
+        }
+      }
+
+      .text {
+        margin-top: 20px;
+      }
+
+      .circle-sky {
+        display: none;
+      }
+
+      .circle-transparent-white {
+        display: none;
+      }
+    }
+
+    section.Dessin {
+      height: 300px;
+      display: none;
+
+    }
+  }
+}
+
+/* ----------- iPad mini ----------- */
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
 }
