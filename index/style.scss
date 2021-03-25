@@ -2,12 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 $h1font-color: #FFFFFF;
 $pfont-color: #FFFFFF;
-$h2font-color: #39729bff;
+$h2font-color: #e6f5ff;
 
 body {
-  background: rgb(15,5,107);
-  background: linear-gradient(rgba(15,5,107,1) 1%, rgba(95,187,226,1) 25%, rgba(124,220,240,1) 77%, rgba(231,247,249,1) 98%);
-  margin: 0;
+  background: linear-gradient(to bottom, #9be2fe 0%,#67d1fb 100%);
 }
 
 body,html {
@@ -75,7 +73,7 @@ p {
   height: 50px;
 
   &:hover {
-    background-color: #60BDE2;
+    background-color: rgba(0, 0, 0, 0);
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
   }
@@ -102,14 +100,14 @@ p {
   border-radius: 100%;
   position: absolute;
   z-index: 1;
-  background-color: #66C4E5;
+  background-color: #60AAFF;
 }
 
 .circle-light-around-circle {
   border-radius: 100%;
   position: absolute;
   z-index: 1;
-  border: 8px solid #66C4E5;
+  border: 8px solid #60AAFF;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -117,14 +115,14 @@ p {
   border-radius: 100%;
   position: absolute;
   z-index: 1;
-  background-color: #FFFFFF;
+  background-color: #60AAFF;
 }
 
 .circle-white-around-circle {
   border-radius: 100%;
   position: absolute;
   z-index: 1;
-  border: 8px solid #FFFFFF;
+  border: 8px solid #60AAFF;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -155,6 +153,7 @@ section.index {
   // NOTE: image de l'eolienne
   section.Eolienne {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin-top: 300px;
 
@@ -250,8 +249,8 @@ section.index {
 
       .oiseaux{
         margin-top: 150px;
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
         position: absolute;
       }
 
@@ -261,23 +260,24 @@ section.index {
       }
 
       img:nth-child(1) {
-        margin-left: 400px;
+        margin-top: 100px;
+        margin-left: 200px;
         transition: 1.6s;
-        width: 270px;
+        width: 170px;
       }
 
       img:nth-child(2) {
-        margin-top: -70px;
-        margin-left: 500px;
+        margin-top: 50px;
+        margin-left: 700px;
         transition: 1.4s;
-        width: 320px;
+        width: 220px;
       }
 
       img:nth-child(3) {
-        margin-top: -100px;
-        margin-left: 350px;
+        margin-top: 0px;
+        margin-left: 400px;
         transition: 0.5s;
-        width: 250px;
+        width: 150px;
       }
     }
   }
@@ -556,6 +556,9 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
 }
 
 @media screen and (max-width: 400px) {
+  .animationtropstyle {
+    animation: 0;
+  }
   html,body{
     overflow-y: visible;
   }
