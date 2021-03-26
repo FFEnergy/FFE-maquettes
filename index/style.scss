@@ -3,13 +3,14 @@
 $h1font-color: #FFFFFF;
 $pfont-color: #FFFFFF;
 $h2font-color: #e6f5ff;
-
+$secondary-color: #60AAFF;
 body {
   background: linear-gradient(to bottom, #9be2fe 0%,#67d1fb 100%);
 }
 
 body,html {
-overflow-x: hidden;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 
@@ -35,28 +36,24 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-#linesvg {
-  overflow: visible;
-  width: auto;
-  height: auto;
-  max-width: 80%;
-  margin: 50vh 40px 100vh;
-  stroke-dasharray: 20;
-  position: absolute;
+img {
+focus: none;
 }
 
 p {
   z-index: 1;
-  margin-top: 80px;
-  width: 700px;
+  width: 55%;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
 .text {
+  margin-top: 80px;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -85,14 +82,14 @@ p {
   border-radius: 100%;
   position: absolute;
   z-index: 1;
-  background-color: #60AAFF;
+  background-color: $secondary-color;
 }
 
 .circle-sky-around-circle {
   border-radius: 100%;
   position: absolute;
   z-index: 1;
-  border: 8px solid #60AAFF;
+  border: 8px solid $secondary-color;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -100,14 +97,14 @@ p {
   border-radius: 100%;
   position: absolute;
   z-index: 1;
-  background-color: #60AAFF;
+  background-color: $secondary-color;
 }
 
 .circle-light-around-circle {
   border-radius: 100%;
   position: absolute;
   z-index: 1;
-  border: 8px solid #60AAFF;
+  border: 8px solid $secondary-color;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -115,14 +112,14 @@ p {
   border-radius: 100%;
   position: absolute;
   z-index: 1;
-  background-color: #60AAFF;
+  background-color: $secondary-color;
 }
 
 .circle-white-around-circle {
   border-radius: 100%;
   position: absolute;
   z-index: 1;
-  border: 8px solid #60AAFF;
+  border: 8px solid $secondary-color;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -164,12 +161,9 @@ section.index {
     }
 
     img:nth-child(1) {
-      image-orientation: image-orientation;
-      image-orientation: flip;
-      margin-left: 20px;
       margin-top: -200px;
       z-index: 1;
-      width: 500px;
+      width: 350px;
       position: absolute;
     }
   }
@@ -197,7 +191,7 @@ section.index {
       width: 160px;
       height: 160px;
       border-radius: 100%;
-      background-color: $pfont-color;
+      background-color: $secondary-color;
       opacity: 0.5;
       right: 5%;
       margin-top: -90px;
@@ -209,7 +203,7 @@ section.index {
       height: 80px;
       border-radius: 100%;
       background-color: $h2font-color;
-      opacity: 1;
+      opacity: 0.7;
       right: 13%;
       margin-top: -105px;
       position: absolute;
@@ -360,10 +354,12 @@ section.index {
       border-radius: 100%;
       background-color: $pfont-color;
       opacity: 0.5;
-      left: 7%;
+      left: 10%;
       margin-top: 30px;
       position: absolute;
     }
+
+
   }
   // NOTE: section des moyens mis en place
   section.Moyen {
@@ -555,7 +551,17 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
   display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1000px) {
+  .circle-transparent-blue {
+    display: none;
+  }
+
+  .circle-transparent-white {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
   .animationtropstyle {
     animation: 0;
   }
@@ -563,7 +569,8 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
     overflow-y: visible;
   }
   p{
-    padding: 20px;
+    font-size: 15px;
+    width: 80%;
   }
   h2 {
     font-size: 30px;
@@ -682,12 +689,4 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
 
     }
   }
-}
-
-/* ----------- iPad mini ----------- */
-
-@media screen and (max-width: 768px) {
-    body {
-        overflow: hidden;
-    }
 }
