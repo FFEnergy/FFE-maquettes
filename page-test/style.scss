@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+$h1font-color: #FFFFFF;
+$pfont-color: #FFFFFF;
+$h2font-color: #60AAFF;
+$secondary-color: #60AAFF;
+
+body {
+  background-color: #60AAFF;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  margin: 20px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: $h1font-color;
+  font-size: 52px;
+  font-family: 'Sansita', sans-serif;
+}
+
+h2 {
+  color: $h1font-color;
+  font-size: 45px;
+  font-family: 'Sansita', sans-serif;
+}
+
+h3 {
+  color: $secondary-color;
+  font-size: 25px;
+  font-family: 'Sansita', sans-serif;
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.8;
+  color: $h1font-color;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nuage:nth-child(1) {
+  width: 300px;
+  margin-left: 40%;
+  margin-top: 30px;
+  position: absolute;
+}
+
+.nuage:nth-child(2) {
+  width: 300px;
+  margin-left: 60%;
+  margin-top: -60px;
+  position: absolute;
+}
+
+.settings {
+  background-color: white;
+  width: 100%;
+  border: 0.5px solid #e8e9ec;
+  display: flex;
+  border-radius: 20px;
+
+  .parametres {
+    min-width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    border-right: 1px solid #e8e9ec;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    li {
+      cursor: pointer;
+      margin: 18px 0;
+      list-style: none;
+      font-size: 18px;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 70%;
+
+      span {
+        text-align: left;
+        width: 100px;
+        color: #808395;
+      }
+
+      i {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        color: #808395;
+      }
+    }
+
+    .actif {
+      i {
+        color: $secondary-color !important;
+      }
+
+      span {
+        color: #24273c !important;
+      }
+    }
+  }
+
+  .main {
+    width: 100%;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: none;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  .actifMain{
+    display: block !important;
+  }
+
+  .compte {
+    .content {
+      height: 55vh;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .fields {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 300px;
+        height: 55vh;
+
+        .field {
+          margin: 0;
+          width: 300px;
+          display: flex;
+          flex-direction: column;
+
+          label {
+            color: #808395;
+            padding-bottom: 10px;
+            font-size: 15px;
+          }
+
+          input {
+            padding: 5px;
+            border: 2px solid #e8e9ee;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      .draw {
+        width: 400px;
+
+        #wind {
+          width: 700px;
+          position: absolute;
+          z-index: 1;
+          margin-top: -100px;
+          margin-left: -20%;
+        }
+
+        #bush {
+          width: 900px;
+          position: absolute;
+          z-index: 1;
+          margin-top: -263px;
+          margin-left: -30%;
+        }
+      }
+      @media screen and (max-width: 1088px) {
+        .draw {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .orders{
+    p {
+      line-height: 1.8;
+      color: #24273c !important;
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+    }
+    .order{
+      width: 800px;
+      height: 140px;
+      transition: 0.5s;
+      border-bottom: 1px solid #e8e9ec;
+      border-left: 1px solid #e8e9ec;
+      border-right: 1px solid #e8e9ec;
+      cursor: pointer;
+      margin: 0;
+      &:hover{
+        box-shadow: 0px 0px 50px -6px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 50px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 50px -6px rgba(0,0,0,0.75);
+      }
+      .upperOrder{
+        margin: 0;
+        background-color: #24273c;
+        width: 100%;
+        height: 50px;
+      }
+    }
+  }
+}

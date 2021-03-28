@@ -4,12 +4,13 @@
 
 $h1font-color: #FFFFFF;
 $pfont-color: #FFFFFF;
-$h2font-color: #39729bff;
+$h2font-color: #60AAFF;
+$secondary-color: #60AAFF;
+
 
 body{
   overflow-x: hidden;
-  background: rgb(56,98,168);
-  background: linear-gradient(rgba(56,98,168,1) 0%, rgba(120,215,238,1) 100%);
+  background: linear-gradient(#9be2fe 0%,#67d1fb 100%);
   margin: 0;
   height: 100vh;
 }
@@ -17,6 +18,14 @@ body{
 .hidden{
   position: absolute;
   left: -1000px;
+}
+
+input::placeholder{
+  color: $secondary-color;
+}
+
+input{
+  border: 1px solid $secondary-color;
 }
 
 // NOTE: circles
@@ -87,8 +96,6 @@ section.Logincards{
     background-color: #ffffff;
     padding: 30px;
     margin: 20vh 100px 0 100px;
-    border-radius: 30px;
-    box-shadow: 12px 12px 12px -3px rgba(0,0,0,0.27);
     h2{
       margin-top: -20px;
       font-family: 'Sansita', sans-serif;
@@ -118,9 +125,6 @@ section.Logincards{
     }
   }
   .cards:nth-of-type(1){
-    input::placeholder{
-      color: $h2font-color;
-    }
     input:nth-of-type(4){
       margin-top: 50px;
     }

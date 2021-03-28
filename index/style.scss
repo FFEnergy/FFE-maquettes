@@ -4,15 +4,16 @@ $h1font-color: #FFFFFF;
 $pfont-color: #FFFFFF;
 $h2font-color: #e6f5ff;
 $secondary-color: #60AAFF;
+
 body {
-  background: linear-gradient(to bottom, #9be2fe 0%,#67d1fb 100%);
+  background: linear-gradient(to bottom, #60AAFF 0%,#67d1fb 100%);
 }
 
-body,html {
+body,
+html {
   overflow-x: hidden;
   margin: 0;
 }
-
 
 h1 {
   margin: 100px 0 0;
@@ -37,7 +38,7 @@ p {
 }
 
 img {
-focus: none;
+  focus: none;
 }
 
 p {
@@ -63,7 +64,6 @@ p {
   transition: 0.7s;
   background-color: #FFFFFF;
   border: 2px;
-  border-radius: 20px;
   color: #60BDE2;
   font-size: 15px;
   width: 300px;
@@ -125,6 +125,8 @@ p {
 
 section.index {
   // NOTE: images de nuages
+  margin-top: 200px;
+
   section.nuages {
     img {
       position: absolute;
@@ -133,7 +135,7 @@ section.index {
 
     img:nth-child(1) {
       left: 30%;
-      top: 70px;
+      top: 170px;
       transition: 1.6s;
     }
 
@@ -241,7 +243,7 @@ section.index {
       display: flex;
       justify-content: center;
 
-      .oiseaux{
+      .oiseaux {
         margin-top: 150px;
         width: 100px;
         height: 100px;
@@ -268,7 +270,7 @@ section.index {
       }
 
       img:nth-child(3) {
-        margin-top: 0px;
+        margin-top: 0;
         margin-left: 400px;
         transition: 0.5s;
         width: 150px;
@@ -320,7 +322,6 @@ section.index {
       height: 94px;
       margin-top: -110px;
       margin-left: -40px;
-
     }
 
     .circles-white {
@@ -358,8 +359,6 @@ section.index {
       margin-top: 30px;
       position: absolute;
     }
-
-
   }
   // NOTE: section des moyens mis en place
   section.Moyen {
@@ -512,14 +511,15 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
   animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideUp,1.5s Infinite linear floating;
   animation-delay: 0s,1s;
 }
+
 .animationtropstyle:not(.animated) .animable {
   opacity: 0;
 }
+
 .animationtropstyle {
   animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideUp,1.5s Infinite linear floating;
   animation-delay: 0s,1s;
 }
-
 @keyframes slideUp {
   0% {
     opacity: 0;
@@ -550,7 +550,6 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
 .animator-hidden {
   display: none;
 }
-
 @media screen and (max-width: 1000px) {
   .circle-transparent-blue {
     display: none;
@@ -560,25 +559,28 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
     display: none;
   }
 }
-
 @media screen and (max-width: 420px) {
   .animationtropstyle {
     animation: 0;
   }
-  html,body{
+
+  body,
+  html {
     overflow-y: visible;
   }
-  p{
+
+  p {
     font-size: 15px;
     width: 80%;
   }
+
   h2 {
     font-size: 30px;
   }
-  section.index {
 
+  section.index {
     section.nuages {
-      *{
+      * {
         display: none;
       }
     }
@@ -593,7 +595,7 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
       }
 
       .boutons-eolienne {
-        .oiseaux{
+        .oiseaux {
           display: none;
         }
       }
@@ -632,10 +634,10 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
       }
 
       .titre-situation {
-        h2{
+        h2 {
           text-align: center;
         }
-        margin-top: 0px;
+        margin-top: 0;
       }
 
       .circle-transparent-white {
@@ -651,7 +653,7 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
       margin-top: 60px;
 
       .titres-moyen {
-        margin-left: 0px;
+        margin-left: 0;
         justify-content: center;
       }
 
@@ -686,7 +688,140 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
     section.Dessin {
       height: 300px;
       display: none;
-
     }
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  clear: both;
+}
+
+a {
+  display: inline-block;
+  color: $secondary-color;
+  text-decoration: none;
+  font-family: 'Sansita', sans-serif;
+}
+
+nav {
+  background: #fff;
+  height: 80px;
+  line-height: 80px;
+  // box-shadow: 1px 1px 1px lightgrey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9998;
+  transition: all 0.5s;
+
+  &.scrollUp {
+    transform: translateY(-80px);
+  }
+
+  img {
+    width: 61.5px;
+  }
+
+  ul.navbar-menu {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+
+      a {
+        color: $secondary-color;
+        font-size: 18px;
+      }
+
+      img {
+        margin-bottom: -11px !important;
+        width: 61.5px;
+        border-radius: 20px;
+      }
+
+      a:hover{
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+      }
+    }
+  }
+
+  a#brand {
+    text-transform: uppercase;
+    float: left;
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  button {
+    background: none;
+    width: 30px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+
+    span {
+      width: 30px;
+      height: 40px;
+      height: 2px;
+      background: $secondary-color;
+      display: block;
+      margin: 5px 0;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+.active {
+  transition-duration: 0.5s;
+  height: 400px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.rotate {
+  transition: 0.5s;
+}
+
+.rotateActive {
+  transform: translate(0px, 8px) rotate(45deg)!important;
+}
+
+.rotateActive1 {
+  opacity: 0;
+}
+
+.rotateActive2 {
+  transform: translate(0px, -7px) rotate(-45deg)!important;
+}
+@media (max-width: 770px) {
+  nav ul.navbar-menu {
+    background-color: white;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  nav button {
+    display: block;
   }
 }
