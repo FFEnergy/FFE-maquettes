@@ -13,6 +13,11 @@ $(document).ready(function() {
 
     if (c < currentScrollTop && a > b + b) {
       navbar.addClass("scrollUp");
+      $(".navbar-menu").removeClass('active');
+      $(".rotate:eq(0)").removeClass('rotateActive');
+      $(".rotate:eq(1)").removeClass('rotateActive1');
+      $(".rotate:eq(2)").removeClass('rotateActive2');
+
     } else if (c > currentScrollTop && !(a <= b)) {
       navbar.removeClass("scrollUp");
     }
