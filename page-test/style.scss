@@ -65,6 +65,10 @@ img{
   position: absolute;
 }
 
+.disable{
+  display: none !important;
+}
+
 .settings {
   background-color: white;
   width: 100%;
@@ -72,7 +76,28 @@ img{
   display: flex;
   border-radius: 20px;
 
+  #wrapParams{
+    border:none;
+    cursor: pointer;
+    focus: none;
+    outline: none;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    i{
+      font-size: 30px;
+      color: $secondary-color;
+      transition: 0.5s;
+    }
+    display: none;
+  }
+
+  .wrapParamsActif{
+    transform: rotate(180deg);
+  }
+
   .parametres {
+    transition: 0.5s;
     min-width: 250px;
     background-color: white;
     border-radius: 20px;
@@ -118,6 +143,8 @@ img{
       }
     }
   }
+
+
 
   .main {
     width: 100%;
@@ -200,7 +227,7 @@ img{
     height: auto;
     display: flex;
     flex-direction: column;
-    .order{
+    .commande{
       width: 800px;
       height: 140px;
       transition: 0.5s;
@@ -250,4 +277,54 @@ img{
       }
     }
   }
+}
+
+
+@media screen and (max-width: 770px) {
+  .nuage{
+    display: none !important;
+  }
+  .settings{
+    flex-direction: column !important;
+    #wrapParams{
+      display: block !important;
+    }
+    .parametres{
+      height: auto;
+      align-items: center;
+      min-width: 0px !important;
+      li{
+        text-align: center;
+        display: block !important;
+        width: 100%;
+      }
+      i{
+        display: none !important;
+      }
+      ul{
+        text-align: center;
+        padding-inline-start: 0px !important;
+      }
+    }
+
+    .actifMain{
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main{
+      padding: 0px !important;
+    }
+
+    .compte{
+      .fields{
+        width: auto !important;
+        .field{
+          width: auto !important;
+        }
+      }
+    }
+  }
+
 }

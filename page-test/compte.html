@@ -22,12 +22,13 @@
   <section class="settings">
     <nav class="parametres">
       <ul>
-        <li id="compte" class="section"><i class="fas fa-user"></i><span>Compte</span></li>
+        <li id="compte" class="section actif"><i class="fas fa-user"></i><span>Compte</span></li>
         <li id="order" class="section"><i class="fas fa-shopping-cart"></i><span>Commandes</span></li>
-        <li id="comment" class="section actif"><i class="fas fa-comments"></i><span>Commentaires</span></li>
+        <li id="comment" class="section"><i class="fas fa-comments"></i><span>Commentaires</span></li>
       </ul>
     </nav>
-    <section class="main compte">
+    <button type="button" name="wrapParams" id="wrapParams"><i class="fas fa-arrow-down"></i></button>
+    <section class="main compte actifMain">
       <h3>General info</h3>
       <div class="content">
         <div class="fields">
@@ -59,7 +60,7 @@
       <div class="content">
         <div class="orders">
 
-          <div class="order">
+          <div class="commande">
             <div class="upperOrder">
               <p>21/05/2021</p>
               <p>EUR 2,40</p>
@@ -72,7 +73,7 @@
             </div>
           </div>
 
-          <div class="order">
+          <div class="commande">
             <div class="upperOrder">
               <p>21/05/2021</p>
               <p>EUR 2,40</p>
@@ -87,11 +88,41 @@
         </div>
       </div>
     </section>
-    <section class="main comment actifMain">
+
+    <section class="main comment">
       <h3>Last comments</h3>
       <div class="content">
+        <div class="orders">
+
+          <div class="commande">
+            <div class="upperOrder">
+              <p>21/05/2021</p>
+              <p>EUR 2,40</p>
+            </div>
+            <div class="lowerOrder">
+              <img src="../Page-Compte/Image/eolienne4.jpg" alt="">
+              <h4>Windy</h4>
+              <p>n°408-0718346-7437963</p>
+              <a href="#">problème avec la commande</a>
+            </div>
+          </div>
+
+          <div class="commande">
+            <div class="upperOrder">
+              <p>21/05/2021</p>
+              <p>EUR 2,40</p>
+            </div>
+            <div class="lowerOrder">
+              <img src="../Page-Compte/Image/eolienne4.jpg" alt="">
+              <h4>Windy</h4>
+              <p>n°408-0718346-7437963</p>
+              <a href="#">problème avec la commande</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
   </section>
 
 

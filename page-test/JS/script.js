@@ -1,61 +1,22 @@
 $(document).ready(function() {
 
-  'use strict';
+  $("#wrapParams").click(function() {
+    $(this.firstChild).toggleClass('wrapParamsActif');
+    $(".parametres").toggleClass('disable');
+  })
 
-  var c, currentScrollTop = 0,
-    navbar = $('nav');
+  $(".section").click(function() {
+    $(".section").removeClass('actif');
+    $(this).toggleClass('actif');
+    $(".main").removeClass('actifMain');
+    $("."+this.id).toggleClass('actifMain');
+  })
 
-  $(window).scroll(function() {
-    var a = $(window).scrollTop();
-    var b = navbar.height();
-
-    currentScrollTop = a;
-
-    if (c < currentScrollTop && a > b + b) {
-      navbar.addClass("scrollUp");
-      $(".navbar-menu").removeClass('active');
-      $(".rotate:eq(0)").removeClass('rotateActive');
-      $(".rotate:eq(1)").removeClass('rotateActive1');
-      $(".rotate:eq(2)").removeClass('rotateActive2');
-
-    } else if (c > currentScrollTop && !(a <= b)) {
-      navbar.removeClass("scrollUp");
+  $(window).resize(function() {
+    if ($(window).width() > 770) {
+      $(".parametres").removeClass('disable');
+    } else if ($(window).width() < 770) {
+      $(".parametres").addClass('disable');
     }
-    c = currentScrollTop;
-  });
-});
-
-if ($(window).width() < 770) {
-  setTimeout(function() {
-    $('.navbar-menu').first().css('transition-duration', '0.5s');
-  }, 200);
-}
-
-$(".burger").click(function() {
-  $(".navbar-menu").toggleClass('active');
-  $(".rotate:eq(0)").toggleClass('rotateActive');
-  $(".rotate:eq(1)").toggleClass('rotateActive1');
-  $(".rotate:eq(2)").toggleClass('rotateActive2');
-})
-
-$(window).resize(function() {
-  if ($(window).width() > 770) {
-    $('.navbar-menu').removeClass('active');
-    $(".rotate:eq(0)").removeClass('rotateActive');
-    $(".rotate:eq(1)").removeClass('rotateActive1');
-    $(".rotate:eq(2)").removeClass('rotateActive2');
-    $('.navbar-menu').first().css('transition-duration', '0s');
-  } else if ($(window).width() < 770) {
-    setTimeout(function() {
-      $('.navbar-menu').first().css('transition-duration', '0.5s');
-    }, 200);
-  }
-})
-
-$(".section").click(function() {
-  $(".section").removeClass('actif');
-  $(this).toggleClass('actif');
-  $(".main").removeClass('actifMain');
-  $("."+this.id).toggleClass('actifMain');
-
+  })
 })

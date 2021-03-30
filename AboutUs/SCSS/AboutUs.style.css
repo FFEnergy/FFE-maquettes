@@ -1,8 +1,5 @@
 body {
-  background: #0f056b;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #0f056b), color-stop(41%, #5fbbe2), color-stop(77%, #7cdcf0), color-stop(98%, #e7f7f9)) no-repeat;
-  background: linear-gradient(#0f056b 1%, #5fbbe2 41%, #7cdcf0 77%, #e7f7f9 98%) no-repeat;
-  height: 4000px;
+  background-color: #60AAFF;
 }
 
 section.nuages img {
