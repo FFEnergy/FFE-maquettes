@@ -58,7 +58,7 @@ p {
 
 .text {
   // padding: 20px;
-  margin-top: 80px;
+  // margin-top: 80px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -191,6 +191,7 @@ section.index {
       padding: 40px 0 40px 0;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       .paragraphe{
         display: flex;
         flex-direction: column;
@@ -221,6 +222,7 @@ section.index {
       .oiseaux {
         width: 50%;
         height: 440px;
+        min-width: 440px;
 
         img {
           position: absolute;
@@ -229,20 +231,20 @@ section.index {
 
         img:nth-child(1) {
           margin-top: 250px;
-          margin-left: 500px;
+          margin-left: 30%;
           transition: 0.7s;
           width: 170px;
         }
 
         img:nth-child(2) {
-          margin-left: 100px;
+          margin-left: 5%;
           margin-top: 150px;
           transition: 0.4s;
           width: 220px;
         }
 
         img:nth-child(3) {
-          margin-left: 350px;
+          margin-left: 20%;
           transition: 0.5s;
           width: 150px;
         }
@@ -252,21 +254,22 @@ section.index {
     .boutons-eolienne {
       display: flex;
       justify-content: center;
-
+      flex-wrap: wrap;
     }
   }
   // NOTE: section du pourquoi l'eolienne
   section.Pourquoi {
-    margin-top: 100px;
+    margin-top: 200px;
 
     .text {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       padding: 40px 0 40px 0;
+      margin-top: 200px;
       .paragraphe{
         width: 50%;
-        min-width: 520px;
+        min-width: 492px;
         display: flex;
         align-items: center;
         p{
@@ -345,7 +348,7 @@ section.index {
   }
   // NOTE: section des moyens mis en place
   section.Moyen {
-    margin-top: 100px;
+    margin-top: 200px;
 
     h2 {
       text-align: center;
@@ -357,9 +360,10 @@ section.index {
       flex-wrap: wrap;
       background-color: $secondary-color;
       padding: 40px 0 40px 0;
+      margin-top: 200px;
       .paragraphe{
         width: 50%;
-        min-width: 520px;
+        min-width: 492px;
         display: flex;
         align-items: center;
         p{
@@ -549,12 +553,22 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
   display: none;
 }
 @media screen and (max-width: 1000px) {
-  .circle-transparent-blue {
-    display: none;
+  section.Pourquoi{
+    .paragraphe:nth-child(1){
+      border-radius: 20px;
+    }
+    p{
+      text-align: center;
+    }
   }
 
-  .circle-transparent-white {
-    display: none;
+  section.Moyen{
+    .paragraphe:nth-child(2){
+      border-radius: 20px;
+    }
+    p{
+      text-align: center;
+    }
   }
 }
 @media screen and (max-width: 420px) {
@@ -584,102 +598,38 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
     }
 
     section.Windy {
-      .circle-transparent-white {
+      .oiseaux{
         display: none;
       }
-
-      .circle-transparent-blue {
-        display: none;
-      }
-
-      .boutons-eolienne {
-        .oiseaux {
-          display: none;
-        }
+      p{
+        text-align: center !important;
       }
     }
 
     section.Pourquoi {
-      margin-top: 100px;
-
-      .text {
-        margin-top: 20px;
-      }
-
-      .titres-Pourquoi {
-        padding: 10px;
-        justify-content: center;
-      }
-
-      .circle-white {
-        display: none;
-      }
-
-      .circle-white-around-circle {
-        display: none;
-      }
-
-      .circle-sky {
-        display: none;
-      }
-
-      .circle-sky-around-circle {
-        display: none;
-      }
-
-      .circles-white {
-        display: none;
-      }
-
-      .titre-situation {
-        h2 {
-          text-align: center;
+      .paragraphe{
+        min-width: 90% !important;
+        img{
+          display: none;
         }
-        margin-top: 0;
       }
-
-      .circle-transparent-white {
-        display: none;
-      }
-
-      .circle-transparent-blue {
-        display: none;
+      p{
+        width: 200px;
       }
     }
 
     section.Moyen {
-      margin-top: 60px;
-
-      .titres-moyen {
-        margin-left: 0;
-        justify-content: center;
+      .text{
+        margin-top: 0;
       }
-
-      .titre-moyen {
-        .circle-white {
+      .paragraphe{
+        min-width: 90% !important;
+        img{
           display: none;
         }
-
-        .circle-white-around-circle {
-          display: none;
-        }
-
-        h2 {
-          z-index: 2;
-          position: relative;
-        }
       }
-
-      .text {
-        margin-top: 20px;
-      }
-
-      .circle-sky {
-        display: none;
-      }
-
-      .circle-transparent-white {
-        display: none;
+      p{
+        width: 200px;
       }
     }
 
