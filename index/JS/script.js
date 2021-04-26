@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   'use strict';
 
   var c, currentScrollTop = 0,
@@ -24,6 +23,9 @@ $(document).ready(function() {
     c = currentScrollTop;
   });
 });
+
+AOS.init();
+
 
 if ($(window).width() < 770) {
   setTimeout(function() {

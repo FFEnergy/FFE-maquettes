@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
 $h1font-color: #FFFFFF;
 $pfont-color: #FFFFFF;
 $h2font-color: #e6f5ff;
 $secondary-color: #60AAFF;
 
 body {
-  background: linear-gradient(to bottom, #60AAFF 0%,#67d1fb 100%);
 }
 
 body,
@@ -16,7 +17,7 @@ html {
 }
 
 h1 {
-  margin: 100px 0 0;
+  padding: 120px 0 0;
   display: flex;
   justify-content: center;
   color: $h1font-color;
@@ -32,9 +33,10 @@ h2 {
 
 p {
   line-height: 1.8;
-  color: $pfont-color;
+  color: $secondary-color;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
 }
 
 img {
@@ -48,19 +50,20 @@ img {
 
 p {
   z-index: 1;
-  width: 55%;
+  // width: 55%;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
 .text {
+  // padding: 20px;
   margin-top: 80px;
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white;
 }
 
 .bouton-primaire {
@@ -68,7 +71,7 @@ p {
   margin: 55px 15px 15px;
   transition: 0.7s;
   background-color: #FFFFFF;
-  border: 2px;
+  border: 1px solid $secondary-color;
   color: $secondary-color;
   font-size: 15px;
   width: 300px;
@@ -76,7 +79,7 @@ p {
   border-radius: 10px;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: $secondary-color;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
   }
@@ -130,8 +133,11 @@ p {
 }
 
 section.index {
+  margin: 100px 0 0 0;
+  border-radius: 20px;
+  background-color: #60AAFF;
+
   // NOTE: images de nuages
-  margin-top: 150px;
 
   section.nuages {
     img {
@@ -181,41 +187,103 @@ section.index {
     flex-direction: column;
     justify-content: center;
 
-    .titre-eolienne {
-      width: 100%;
+    .text {
+      padding: 40px 0 40px 0;
       display: flex;
       justify-content: center;
+      .paragraphe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+
+        h3{
+          width: 95%;
+          text-align: center;
+          color: $secondary-color;
+          font-size: 40px;
+          font-family: 'Knewave', cursive;
+        }
+
+        p{
+          width: 95%;
+        }
+
+        p:nth-child(1){
+          text-align: left;
+        }
+
+        p:nth-child(2){
+          text-align: right;
+        }
+      }
+
+      .oiseaux {
+        width: 50%;
+        height: 440px;
+
+        img {
+          position: absolute;
+          z-index: 0;
+        }
+
+        img:nth-child(1) {
+          margin-top: 250px;
+          margin-left: 500px;
+          transition: 0.7s;
+          width: 170px;
+        }
+
+        img:nth-child(2) {
+          margin-left: 100px;
+          margin-top: 150px;
+          transition: 0.4s;
+          width: 220px;
+        }
+
+        img:nth-child(3) {
+          margin-left: 350px;
+          transition: 0.5s;
+          width: 150px;
+        }
+      }
     }
 
-    h2 {
-      margin: -50px 0 0;
-      color: $secondary-color;
-      font-size: 55px;
-      font-family: 'Sansita', sans-serif;
-      z-index: 2;
-    }
-
-    .circle-transparent-white {
-      width: 160px;
-      height: 160px;
-      border-radius: 100%;
-      background-color: $h1font-color;
-      opacity: 0.5;
-      right: 5%;
-      margin-top: -90px;
-      position: absolute;
-    }
-
-    .circle-transparent-blue {
-      width: 80px;
-      height: 80px;
-      border-radius: 100%;
-      background-color: $h1font-color;
-      opacity: 0.7;
-      right: 13%;
-      margin-top: -105px;
-      position: absolute;
-    }
+    // .titre-eolienne {
+    //   width: 100%;
+    //   display: flex;
+    //   justify-content: center;
+    // }
+    //
+    // h2 {
+    //   margin: -50px 0 0;
+    //   color: $secondary-color;
+    //   font-size: 55px;
+    //   font-family: 'Sansita', sans-serif;
+    //   z-index: 2;
+    // }
+    //
+    // .circle-transparent-white {
+    //   width: 160px;
+    //   height: 160px;
+    //   border-radius: 100%;
+    //   background-color: $h1font-color;
+    //   opacity: 0.5;
+    //   right: 5%;
+    //   margin-top: -90px;
+    //   position: absolute;
+    // }
+    //
+    // .circle-transparent-blue {
+    //   width: 80px;
+    //   height: 80px;
+    //   border-radius: 100%;
+    //   background-color: $h1font-color;
+    //   opacity: 0.7;
+    //   right: 13%;
+    //   margin-top: -105px;
+    //   position: absolute;
+    // }
 
     .circle-light:nth-of-type(1) {
       width: 110px;
@@ -249,38 +317,6 @@ section.index {
       display: flex;
       justify-content: center;
 
-      .oiseaux {
-        margin-top: 150px;
-        width: 100px;
-        height: 100px;
-        position: absolute;
-      }
-
-      img {
-        position: absolute;
-        z-index: 0;
-      }
-
-      img:nth-child(1) {
-        margin-top: 100px;
-        margin-left: 200px;
-        transition: 1.6s;
-        width: 170px;
-      }
-
-      img:nth-child(2) {
-        margin-top: 50px;
-        margin-left: 700px;
-        transition: 1.4s;
-        width: 220px;
-      }
-
-      img:nth-child(3) {
-        margin-top: 0;
-        margin-left: 400px;
-        transition: 0.5s;
-        width: 150px;
-      }
     }
   }
   // NOTE: section du pourquoi l'eolienne
