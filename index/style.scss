@@ -355,6 +355,7 @@ section.index {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      background-color: $secondary-color;
       padding: 40px 0 40px 0;
       .paragraphe{
         width: 50%;
@@ -371,7 +372,7 @@ section.index {
       }
 
       .paragraphe:nth-child(2){
-        background-color: $secondary-color;
+        background-color: white;
         display: flex;
         flex-direction: column;
         border-top-left-radius: 20px;
@@ -397,12 +398,11 @@ section.index {
         }
 
         p{
-          color: white;
+          color: $secondary-color;
         }
       }
 
       .paragraphe:nth-child(1){
-        background-color: white;
         display: flex;
         flex-direction: column;
 
@@ -426,7 +426,7 @@ section.index {
         }
 
         p{
-          color: $secondary-color;
+          color: white;
         }
       }
     }
