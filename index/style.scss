@@ -355,18 +355,23 @@ section.index {
     }
 
     .text {
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       flex-wrap: wrap;
       background-color: $secondary-color;
       padding: 40px 0 40px 0;
       margin-top: 200px;
       .paragraphe{
-        width: 50%;
+        text-align: center;
+        width: 70%;
         min-width: 492px;
         display: flex;
         align-items: center;
         p{
+
           padding: 0 100px 0 100px;
         }
       }
@@ -379,8 +384,10 @@ section.index {
         background-color: white;
         display: flex;
         flex-direction: column;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        // border-bottom-left-radius: 20px;
+        // border-bottom-right-radius: 20px;
+
+        // border-radius: 20px;
 
 
         p{
@@ -389,8 +396,15 @@ section.index {
       }
 
       .paragraphe:nth-child(1){
+        // border-top-left-radius: 20px;
+        // border-top-right-radius: 20px;
+
+        margin-bottom: 40px;
+
+        background-color: white;
         display: flex;
         flex-direction: column;
+        // border-radius: 20px;
 
         img{
           width: 150px;
@@ -413,7 +427,7 @@ section.index {
         }
 
         p{
-          color: white;
+          color: $secondary-color;
         }
       }
     }
@@ -424,7 +438,7 @@ section.index {
   section.Dessin {
     display: flex;
     height: 600px;
-    margin-top: 500px;
+    margin-top: 600px;
 
     .plaine-petit {
       display: flex;
