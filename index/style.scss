@@ -349,6 +349,10 @@ section.index {
   // NOTE: section des moyens mis en place
   section.Moyen {
     margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     h2 {
       text-align: center;
@@ -364,9 +368,10 @@ section.index {
       background-color: $secondary-color;
       padding: 40px 0 40px 0;
       margin-top: 200px;
+      width: 70% !important;
       .paragraphe{
         text-align: center;
-        width: 70%;
+        width: 100%;
         min-width: 492px;
         display: flex;
         align-items: center;
@@ -577,9 +582,6 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
   }
 
   section.Moyen{
-    .paragraphe:nth-child(2){
-      border-radius: 20px;
-    }
     p{
       text-align: center;
     }
@@ -621,6 +623,10 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
     }
 
     section.Pourquoi {
+      margin-top: 0px !important;
+      .text{
+        margin-top: 0px !important;
+      }
       .paragraphe{
         min-width: 90% !important;
         img{
@@ -633,6 +639,7 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
     }
 
     section.Moyen {
+      margin-top: 0px !important;
       .text{
         margin-top: 0;
       }

@@ -98,7 +98,6 @@ img {
   }
 
   .content {
-    height: 55vh;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -264,9 +263,9 @@ img {
         margin: 0 0 40px;
 
         &:hover {
-          box-shadow: 0 0 50px -6px rgba(0,0,0,0.75);
-          -webkit-box-shadow: 0 0 50px -6px rgba(0,0,0,0.75);
-          -moz-box-shadow: 0 0 50px -6px rgba(0,0,0,0.75);
+          box-shadow: 0 0 10px -6px rgba(0,0,0,0.75);
+          -webkit-box-shadow: 0 0 10px -6px rgba(0,0,0,0.75);
+          -moz-box-shadow: 0 0 10px -6px rgba(0,0,0,0.75);
         }
 
         .upperOrder {
@@ -406,7 +405,6 @@ img {
           }
 
           p {
-            width: 100%;
             color: #24273c;
             margin: 10px 15px;
             font-size: 15px;
