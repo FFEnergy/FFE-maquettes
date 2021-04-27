@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+$h1font-color: #FFFFFF;
+$pfont-color: #FFFFFF;
+$h2font-color: #e6f5ff;
+$secondary-color: #60AAFF;
+
+body {
+  background-color: #60AAFF;
+  margin: 0;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+h1 {
+  padding: 120px 0 0;
+  display: flex;
+  justify-content: center;
+  color: $h1font-color;
+  font-size: 52px;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  line-height: 1.8;
+  color: $secondary-color;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+section.nuages {
+  img {
+    position: absolute;
+    width: 400px;
+  }
+
+  img:nth-child(1) {
+    left: 30%;
+    top: 170px;
+    transition: 1.6s;
+  }
+
+  img:nth-child(2) {
+    left: 70%;
+    transition: 1.4s;
+  }
+
+  img:nth-child(3) {
+    top: 250px;
+    transition: 0.5s;
+  }
+}
+.parallaxParent {
+  height: 100vh;
+  overflow: hidden;
+}
+.parallaxParent > * {
+  height: 200%;
+  position: relative;
+  top: -100%;
+}
+section.product{
+  h2{
+    text-align: center;
+    font-family: 'Knewave', cursive;
+    color: $h2font-color;
+    font-size: 50px;
+    margin-bottom: 150px;
+  }
+  margin-top: 250px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  .desc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    img{
+      min-width: 520px;
+      width: 50%;
+      object-fit: cover;
+    }
+    .txt{
+
+      width: 50%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p{
+        margin-left: 10%;
+        width: 80%
+      }
+    }
+  }
+  .nbr{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-image:
+        linear-gradient(to bottom, rgba(18,42, 66, .85), rgba(18,42, 66, .85)),
+        url("../Image/eolienne4.jpg");
+       -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    .txt{
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+          font-size: 50px;
+          color: $secondary-color;
+          width: 300px;
+          text-align: center;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+
+  img{
+    // min-width: 520px;
+    // width: 50%;
+  }
+}
+.carr{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+    img{
+      width: 100%;
+    }
+
+}
+
+.panel {
+  height: 100vh;
+  width: 100%;
+}

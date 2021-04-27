@@ -5,28 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./SCSS/fiche-produit.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" href="./css/fiche-produit.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Fiche produit</title>
 </head>
 
 <body>
-    <section id="section1">
-        <h1>Aidez-nous</h1>
-        <img id="nuage1" src="./Image/nuage1.png">
-        <img id="nuage2" src="./Image/nuage2.png">
-        <img id="nuage3" src="./Image/nuage3.png">
-        <div id="divParagraphe">
-            <p>--- Descriptif technique du produit ---</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestias eveniet optio ducimus est
-                mollitia, commodi dolorum eos aliquam? Aut doloremque, ex voluptate illum facere deleniti corrupti
-                doloribus earum harum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam itaque sed quibusdam ratione sunt ipsum,
-                quos laborum iusto impedit dolores nam veniam provident voluptatum culpa quo. Dolor sit nisi sequi!</p>
-        </div>
+
+  <h1 class="t1">Aidez-nous</h1>
+  <section class="nuages">
+    <img class="nuage" src="..\index\images\nuage1.svg" alt="">
+    <img class="nuage" src="..\index\images\nuage2.svg" alt="">
+    <img class="nuage" src="..\index\images\nuage3.svg" alt="">
+  </section>
+
+
+
+  <section class="product">
+    <h2>Windy</h2>
+    <section class="desc panel">
+      <img data-aos="fade-right" src="./Image/eolienne5.jpg">
+      <div class="txt">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </section>
-    <section id="section2">
+    <section class="nbr panel">
+      <div class="txt">
+        <ul>
+          <li><i class="fas fa-bolt"></i> : 12kw</li>
+          <li><i class="fas fa-wind"></i> : <5 </li>
+          <li><i class="fas fa-dollar-sign"></i> : 0</li>
+        </ul>
+      </div>
+    </section>
+    <!-- <section class="carr">
+      <h2>voulez nous aider ?</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Image/eolienne3.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="./Image/eolienne6.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="./Image/eolienne5.jpg">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section> -->
+
+    <!-- <img src="./Image/eolienne5.jpg">
+    <img src="./Image/eolienne3.jpg">
+    <img src="./Image/eolienne4.jpg">
+    <img src="./Image/eolienne6.jpg"> -->
+
+  </section>
+
+
+
+
+  <section class="carr">
+    <h2>voulez nous aider ?</h2>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Image/eolienne3.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="./Image/eolienne6.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="./Image/eolienne5.jpg">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+
+
+
+
+    <!-- <section id="section2">
         <div id="circle">
             <div class="circle"></div>
             <div class="circle-around"></div>
@@ -73,8 +160,8 @@
                 <div id="circle-blue-arround"></div>
             </div>
         </div>
-    </section>
-    <section id="section3">
+    </section> -->
+    <!-- <section id="section3">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -141,12 +228,21 @@
         </div>
 
 
-    </section>
+    </section> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./JS/fiche-produit.js"></script>
+    <script src="https://kit.fontawesome.com/5703a1c6f6.js" crossorigin="anonymous"></script>
+
 </body>
-<script src="./JS/fiche-produit.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/5703a1c6f6.js" crossorigin="anonymous"></script>
 
 </html>
