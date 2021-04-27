@@ -85,52 +85,6 @@ p {
   }
   z-index: 1;
 }
-// NOTE: circles
-
-.circle-sky {
-  border-radius: 100%;
-  position: absolute;
-  z-index: 1;
-  background-color: $secondary-color;
-}
-
-.circle-sky-around-circle {
-  border-radius: 100%;
-  position: absolute;
-  z-index: 1;
-  border: 8px solid $secondary-color;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.circle-light {
-  border-radius: 100%;
-  position: absolute;
-  z-index: 1;
-  background-color: $h1font-color;
-}
-
-.circle-light-around-circle {
-  border-radius: 100%;
-  position: absolute;
-  z-index: 1;
-  border: 8px solid $h1font-color;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.circle-white {
-  border-radius: 100%;
-  position: absolute;
-  z-index: 1;
-  background-color: $secondary-color;
-}
-
-.circle-white-around-circle {
-  border-radius: 100%;
-  position: absolute;
-  z-index: 1;
-  border: 8px solid $secondary-color;
-  background-color: rgba(0, 0, 0, 0);
-}
 
 section.index {
   margin: 100px 0 0 0;
