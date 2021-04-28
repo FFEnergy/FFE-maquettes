@@ -343,6 +343,18 @@ nav {
     visibility: hidden;
   }
 
+  section.product{
+    .desc{
+      .txt{
+        width: 100%;
+        text-align: center;
+
+      }
+
+    }
+    margin-top: 0 !important;
+  }
+
   nav button {
     display: block;
   }

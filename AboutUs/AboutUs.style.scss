@@ -164,7 +164,17 @@ section.miseEnPlace{
       #Florent{
       }
       #Florian{
-        margin-top: 100px;
+      }
+      h3{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        color: $secondary-color;
+        font-size: 40px;
+        font-family: 'Knewave', cursive;
+        &:first-child{
+          margin-top: 100px;
+        }
       }
     }
   }
@@ -184,7 +194,7 @@ section.miseEnPlace{
 
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 600px) {
 
   body,
   html {
@@ -344,4 +354,15 @@ nav {
   nav button {
     display: block;
   }
+
+  section.miseEnPlace{
+    .text {
+      .paragraphe{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+
 }
