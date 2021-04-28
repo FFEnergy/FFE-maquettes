@@ -14,19 +14,38 @@
 </head>
 
 <body>
-  <img class="nuage" src="../index/images/nuage3.svg" alt="">
-  <img class="nuage" src="../index/images/nuage2.svg" alt="">
+
+  <nav>
+    <div class="container">
+      <a aria-label="page d'acceuil" href="../index/" id="brand"><img src="..\index\images\wind.svg" alt=""></a>
+      <button class="burger">
+        <span class="rotate"></span>
+        <span class="rotate"></span>
+        <span class="rotate"></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="../index/">Home</a></li>
+        <li><a href="../AboutUs/AboutUs.html">About</a></li>
+        <li><a href="../Contact/contact.html">Contactez-nous</a></li>
+        <li><a href="../Fiche-Produit/fiche-produit.html">Acheter</a></li>
+        <li><a href="../page-test/compte.html"><img src="../Header/Image/lorenzo.jpg" alt="Image profile de l'utilisateur"></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- <img class="nuage" src="../index/images/nuage3.svg" alt="">
+  <img class="nuage" src="../index/images/nuage2.svg" alt=""> -->
 
   <h2>Account Settings</h2>
   <p>Change your profile and account settings</p>
   <section class="settings">
-    <nav class="parametres">
+    <div class="parametres">
       <ul>
         <li id="compte" class="section actif"><i class="fas fa-user"></i><span>Compte</span></li>
         <li id="order" class="section"><i class="fas fa-shopping-cart"></i><span>Commandes</span></li>
         <li id="comment" class="section"><i class="fas fa-comments"></i><span>Commentaires</span></li>
       </ul>
-    </nav>
+    </div>
     <button type="button" name="wrapParams" id="wrapParams"><i class="fas fa-arrow-down"></i></button>
     <section class="main compte actifMain">
       <h3>General info</h3>
