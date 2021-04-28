@@ -62,30 +62,6 @@ h2{
   z-index: 1;
 }
 
-section.nuages {
-  margin-top: 50px;
-  height: 200px;
-  img {
-    position: absolute;
-    width: 400px;
-  }
-
-  img:nth-child(1) {
-    left: 30%;
-    top: 170px;
-    transition: 1.6s;
-  }
-
-  img:nth-child(2) {
-    left: 70%;
-    transition: 1.4s;
-  }
-
-  img:nth-child(3) {
-    top: 250px;
-    transition: 0.5s;
-  }
-}
 .parallaxParent {
   height: 100vh;
   overflow: hidden;
@@ -96,8 +72,6 @@ section.nuages {
   top: -100%;
 }
 section.product{
-
-  margin-top: 250px;
   display: flex;
   flex-direction:column;
   justify-content: center;

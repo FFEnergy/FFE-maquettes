@@ -8,7 +8,6 @@ $h2font-color: #e6f5ff;
 $secondary-color: #60AAFF;
 
 body {
-  background-color: #60AAFF;
   margin: 0;
 }
 
@@ -64,6 +63,7 @@ p {
 }
 
 section.nuages {
+  display: none;
   img {
     position: absolute;
     width: 400px;
@@ -87,7 +87,6 @@ section.nuages {
 }
 
 section.miseEnPlace{
-  margin-top: 250px;
   width: 100%;
   display: flex;
   flex-direction: column;
