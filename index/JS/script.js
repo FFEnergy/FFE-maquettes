@@ -27,7 +27,7 @@ $(document).ready(function() {
 AOS.init();
 
 
-if ($(window).width() < 770) {
+if ($(window).width() < 1150) {
   setTimeout(function() {
     $('.navbar-menu').first().css('transition-duration', '0.5s');
   }, 200);
@@ -41,13 +41,13 @@ $(".burger").click(function() {
 })
 
 $(window).resize(function() {
-  if ($(window).width() > 770) {
+  if ($(window).width() > 1150) {
     $('.navbar-menu').removeClass('active');
     $(".rotate:eq(0)").removeClass('rotateActive');
     $(".rotate:eq(1)").removeClass('rotateActive1');
     $(".rotate:eq(2)").removeClass('rotateActive2');
     $('.navbar-menu').first().css('transition-duration', '0s');
-  } else if ($(window).width() < 770) {
+  } else if ($(window).width() < 1150) {
     setTimeout(function() {
       $('.navbar-menu').first().css('transition-duration', '0.5s');
     }, 200);

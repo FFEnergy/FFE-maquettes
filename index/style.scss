@@ -146,6 +146,7 @@ section.index {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      height: 100vh;
       .paragraphe{
         display: flex;
         flex-direction: column;
@@ -162,14 +163,7 @@ section.index {
 
         p{
           width: 95%;
-        }
-
-        p:nth-child(1){
-          text-align: left;
-        }
-
-        p:nth-child(2){
-          text-align: right;
+          text-align: center;
         }
       }
 
@@ -213,9 +207,17 @@ section.index {
   }
   // NOTE: section du pourquoi l'eolienne
   section.Pourquoi {
-    margin-top: 200px;
-
+    padding-top: 200px;
+    background-image:
+        linear-gradient(to bottom, rgba(18,42, 66, .85), rgba(18,42, 66, .85)),
+        url("https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/2959355/original/african-children/get-kids-from-africa-to-scream-happy-birthday.jpg");
+       -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    background-attachment: fixed;
     .text {
+      height: 100vh;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -302,7 +304,7 @@ section.index {
   }
   // NOTE: section des moyens mis en place
   section.Moyen {
-    margin-top: 200px;
+    padding-top: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -312,20 +314,30 @@ section.index {
       text-align: center;
     }
 
+    background-image:
+        linear-gradient(to bottom, rgba(18,42, 66, .85), rgba(18,42, 66, .85)),
+        url("https://wiki.lowtechlab.org/images/thumb/1/10/L_olienne_Equipe_et_Eolienne_c_Laurent_Sardi.jpg/800px-L_olienne_Equipe_et_Eolienne_c_Laurent_Sardi.jpg");
+       -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    background-attachment: fixed;
+
     .text {
+      height: 100vh;
       border-top: 2px solid white;
       border-bottom: 2px solid white;
       display: flex;
       flex-direction: column;
       justify-content: center;
       flex-wrap: wrap;
-      background-color: $secondary-color;
+      // background-color: $secondary-color;
       padding: 40px 0 40px 0;
       margin-top: 200px;
-      width: 70% !important;
+      width: 100% !important;
       .paragraphe{
         text-align: center;
-        width: 100%;
+        width: 70%;
         min-width: 492px;
         display: flex;
         align-items: center;
@@ -433,7 +445,7 @@ section.index {
       height: 700px;
       border-radius: 50% 50% 0 0;
       background-color: #00D957;
-      right: -10%;
+      right: 0%;
 
       img {
         width: 100px;
@@ -621,13 +633,6 @@ svg#freepik_stories-wind-turbine.animated #freepik--wind-turbine-1--inject-16 {
   clear: both;
 }
 
-a {
-  display: inline-block;
-  color: $secondary-color;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-}
-
 nav {
   background: #fff;
   height: 80px;
@@ -639,6 +644,16 @@ nav {
   width: 100%;
   z-index: 9998;
   transition: all 0.5s;
+
+  a {
+    display: inline-block;
+    color: $secondary-color;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
 
   &.scrollUp {
     transform: translateY(-80px);
@@ -681,6 +696,10 @@ nav {
     float: left;
     font-weight: 800;
     font-size: 20px;
+    display: flex;
+    span{
+      margin-left: 60px;
+    }
   }
 
   button {
@@ -731,7 +750,7 @@ nav {
 .rotateActive2 {
   transform: translate(0px, -7px) rotate(-45deg)!important;
 }
-@media (max-width: 770px) {
+@media (max-width: 1150px) {
   nav ul.navbar-menu {
     background-color: white;
     width: 100%;
@@ -746,5 +765,17 @@ nav {
 
   nav button {
     display: block;
+  }
+}
+
+@media (max-width: 750px) {
+  nav{
+    a{
+      span{
+        margin-left: -10px !important;
+        font-size: 10px;
+
+      }
+    }
   }
 }
